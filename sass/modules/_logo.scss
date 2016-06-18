@@ -1,0 +1,29 @@
+/************************************************************************************
+ LOGO, BRAND
+*************************************************************************************/
+
+.logo {
+    @include inline-block;
+    vertical-align: baseline;
+    padding-top: $gap-large;
+    line-height: 1;
+    font-size: $nav-font-size*1em;
+    @include rem-fallback(margin-right, $gap-base-rem);
+    @include rem-fallback(margin-left, $gap-base-rem);
+    color: $brand-color;
+    text-shadow: none;
+
+    // text-shadow: 0px 2px 3px #555;
+    &:hover, &:focus, &:active {
+        color: $brand-color;
+        background: transparent;
+        text-decoration: none;
+    }
+
+
+}
+
+
+
+
+

@@ -1,0 +1,109 @@
+/************************************************************************************
+    HEADINGS
+*************************************************************************************/
+
+/**
+ *  wherever possible is applied the principle of "Single-direction margin declarations"
+ *  Source: http://csswizardry.com/2012/06/single-direction-margin-declarations/
+ *  But instead of using margin-bottom I use margin-top.
+ *  It is more logical that the position of the object depends upon it´s own properties(margin-top)
+ *  and not upon the properties (margin-bottom) of the previous object
+ */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $headings-font-family;
+    line-height: $headings-line-height;
+    margin-top: $gap-large;
+    text-align: center;
+}
+
+h1 {
+   // text-align: left;
+    //font-weight: normal;
+    margin-top: $gap-large;
+    @include font-size($font-size-h1);
+}
+
+h2 {
+    font-family: $font-family-arial;
+    font-weight: normal;
+    @include font-size($font-size-h2);
+}
+
+h3 {
+    @include font-size($font-size-h3);
+    text-align: left;
+}
+
+h4 {
+    @include font-size($font-size-h4);
+    text-align: left;
+}
+
+h5 {
+    @include font-size($font-size-h5);
+    text-align: left;
+}
+
+h6 {
+    @include font-size($font-size-h6);
+}
+
+
+h3, h4, h5 {
+    color: $link-color;
+    font-weight: normal;
+}
+
+.title {
+    text-align: left;
+    font-weight: bold;
+    margin-top: 0;
+    padding-top: $gap-small;
+    @include font-size($font-size-h1 * 0.9);
+    @include rem-fallback(max-width, $width-text);
+    @include rem-fallback(margin-right, $gap-base-rem);
+    @include rem-fallback(margin-left, $gap-base-rem);
+}
+
+/**
+  * This class is used to make the introductory text (usually a paragraph)
+  * of a document larger.
+  */
+
+.lead {
+    @include font-size($lead-font-size);
+    text-align: center;
+    margin-top: $gap-huge;
+    @include rem-fallback(margin-right, $gap-base-rem);
+    @include rem-fallback(margin-left, $gap-base-rem);
+    @include rem-fallback(max-width, $width-text*1.3);
+
+    .button {
+        @include font-size(1);
+    }
+
+    &:before {
+         @extend %pull-center;
+         display: block;
+         margin-bottom: $gap-base;
+         width: $blockquote-border-length;
+         height: $blockquote-border-width;
+         background-color: $blockquote-border-color;
+         content: "\200B"
+     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
