@@ -1,0 +1,85 @@
+/************************************************************************************
+    Blockquotes
+*************************************************************************************/
+
+
+blockquote {
+    @extend %pull-center;
+    margin-top: $gap-huge;
+    margin-bottom: $gap-huge;
+    text-align: center;
+    font-style: italic;
+
+    ul {
+        @include inline-block;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        li {
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    hr {
+        margin: $gap-small auto;
+        width: $blockquote-border-length;
+        height: 1px;
+        background-color: $blockquote-border-color;
+        color: $blockquote-border-color;
+    }
+
+    &:after {
+        @extend %pull-center;
+        display: block;
+        margin-top: $gap-base;
+        width: $blockquote-border-length;
+        height: $blockquote-border-width;
+        background-color: $blockquote-border-color;
+        content: "\200B";
+    }
+}
+
+
+/*
+blockquote {
+    margin-top: $gap-huge;
+    margin-bottom: $gap-huge;
+    text-align: left;
+    border-left: $blockquote-border-width solid $blockquote-border-color;
+    font-style: italic;
+
+    &:first-child  {
+        margin-top: 0
+    }
+
+    &:last-child  {
+        margin-bottom: 0
+    }
+
+} */
+
+
+
+/*blockquote:before, blockquote:after {
+    display: block;
+    width: $blockquote-border-length;
+    height: $blockquote-border-width;
+    @extend %pull-center;
+    background-color: $link-color;
+    content: "\200B";
+}
+
+blockquote:before {
+    margin-bottom: $gap-small;
+}
+
+blockquote:after {
+    margin-top: $gap-small;
+}*/
+
+
+
+
