@@ -21,39 +21,46 @@ h1 {
    // text-align: left;
     //font-weight: normal;
     margin-top: $gap-large;
-    @include font-size($font-size-h1);
+    font-size: $font-size-h1 * $base-font-size * 1em;
+
+        @include breakpoint(big) {
+            font-size: $font-size-h1 * $base-font-size-screen-big * 1em;
+        }
+
+        @include breakpoint(small) {
+            font-size: $font-size-h1 * $base-font-size-screen-small * 1em;;
+        }
 }
 
 h2 {
     font-family: $font-family-arial;
     font-weight: normal;
-    @include font-size($font-size-h2);
+
+      font-size: $font-size-h2 * $base-font-size * 1em;
+
+            @include breakpoint(big) {
+                font-size: $font-size-h2 * $base-font-size-screen-big * 1em;
+            }
+
+            @include breakpoint(small) {
+                font-size: $font-size-h2 * $base-font-size-screen-small * 1em;;
+            }
 }
 
 h3 {
     @include font-size($font-size-h3);
-    text-align: left;
-}
+      font-size: $font-size-h3 * $base-font-size * 1em;
 
-h4 {
-    @include font-size($font-size-h4);
-    text-align: left;
-}
+            @include breakpoint(big) {
+                font-size: $font-size-h3 * $base-font-size-screen-big * 1em;
+            }
 
-h5 {
-    @include font-size($font-size-h5);
-    text-align: left;
-}
-
-h6 {
-    @include font-size($font-size-h6);
+            @include breakpoint(small) {
+                font-size: $font-size-h3 * $base-font-size-screen-small * 1em;;
+            }
 }
 
 
-h3, h4, h5 {
-    color: $link-color;
-    font-weight: normal;
-}
 
 .title {
     text-align: left;
