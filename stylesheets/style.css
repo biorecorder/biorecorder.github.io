@@ -1037,7 +1037,7 @@ COLORS
 /* line 11, ../sass/modules/_colors.scss */
 .dark {
   background: #201720;
-  color: #937272;
+  color: #92696a;
 }
 
 /************************************************************************************
@@ -1074,7 +1074,7 @@ body {
   font-variant: normal;
   line-height: 1.667;
   background: #201720;
-  color: #937272;
+  color: #92696a;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
 }
 
@@ -1094,18 +1094,18 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
 
 /* line 55, ../sass/modules/_!main.scss */
 a {
-  color: #c66579;
+  color: #ab5052;
   text-decoration: none;
 }
 /* line 59, ../sass/modules/_!main.scss */
 a:hover, a:focus, a:active {
-  background: #df7d85;
-  color: #3d2f2f;
+  background: #bda4a4;
+  color: #392929;
 }
 
 /* line 66, ../sass/modules/_!main.scss */
 ::-moz-selection, ::selection {
-  background: #c66579;
+  background: #ab5052;
   color: white;
 }
 
@@ -1134,8 +1134,8 @@ hr {
   margin: 2em auto;
   border: none;
   height: 3px;
-  background-color: #c66579;
-  color: #c66579;
+  background-color: #ab5052;
+  color: #ab5052;
 }
 
 /* line 105, ../sass/modules/_!main.scss */
@@ -1179,18 +1179,18 @@ h1, h2, h3, h4, h5, h6 {
 /* line 20, ../sass/modules/_headings.scss */
 h1 {
   margin-top: 1.5em;
-  font-size: 1.65em;
+  font-size: 1.54em;
 }
 @media only screen and (min-width: 1000px) {
   /* line 20, ../sass/modules/_headings.scss */
   h1 {
-    font-size: 1.8em;
+    font-size: 1.68em;
   }
 }
 @media only screen and (max-width: 760px) {
   /* line 20, ../sass/modules/_headings.scss */
   h1 {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
 }
 
@@ -1198,18 +1198,18 @@ h1 {
 h2 {
   font-family: Arial, sans-serif;
   font-weight: normal;
-  font-size: 1.485em;
+  font-size: 1.43em;
 }
 @media only screen and (min-width: 1000px) {
   /* line 35, ../sass/modules/_headings.scss */
   h2 {
-    font-size: 1.62em;
+    font-size: 1.56em;
   }
 }
 @media only screen and (max-width: 760px) {
   /* line 35, ../sass/modules/_headings.scss */
   h2 {
-    font-size: 1.35em;
+    font-size: 1.3em;
   }
 }
 
@@ -1238,8 +1238,8 @@ h3 {
   font-weight: bold;
   margin-top: 0;
   padding-top: 0.5em;
-  font-size: 21.6px;
-  font-size: 1.35rem;
+  font-size: 20.16px;
+  font-size: 1.26rem;
   max-width: 672px;
   max-width: 42rem;
   margin-right: 24px;
@@ -1276,7 +1276,7 @@ h3 {
   margin-bottom: 1em;
   width: 10em;
   height: 3px;
-  background-color: #c66579;
+  background-color: #ab5052;
   content: "​";
 }
 
@@ -1304,8 +1304,8 @@ h3 {
 .button, #toTop {
   margin: 1em 0.5em;
   padding: 0.5em 1.5em;
-  color: #c66579;
-  border: 2px solid #c66579;
+  color: #ab5052;
+  border: 2px solid #ab5052;
   -moz-border-radius: 24px;
   -webkit-border-radius: 24px;
   -ms-border-radius: 24px;
@@ -1316,23 +1316,23 @@ h3 {
 .button:hover, #toTop:hover, .button:focus, #toTop:focus, .button:active, #toTop:active {
   text-decoration: none;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
-  color: #3d2f2f;
-  background: #df7d85;
-  border-color: #df7d85;
+  color: #392929;
+  background: #bda4a4;
+  border-color: #bda4a4;
 }
 
 /* line 67, ../sass/modules/_buttons.scss */
 .button--filled {
-  background: #c66579;
-  color: #3d2f2f;
+  background: #92696a;
+  color: #392929;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
-  border: 2px solid #c66579;
+  border: 2px solid #92696a;
 }
 /* line 34, ../sass/modules/_buttons.scss */
 .button--filled:hover, .button--filled:focus, .button--filled:active {
   text-decoration: none;
-  color: #c66579;
-  border-color: #c66579;
+  color: #ab5052;
+  border-color: #ab5052;
   background: none;
   text-shadow: none;
 }
@@ -1599,8 +1599,8 @@ blockquote hr {
   margin: 0.5em auto;
   width: 10em;
   height: 1px;
-  background-color: #c66579;
-  color: #c66579;
+  background-color: #ab5052;
+  color: #ab5052;
 }
 /* line 34, ../sass/modules/_blockquote.scss */
 blockquote:after {
@@ -1608,7 +1608,7 @@ blockquote:after {
   margin-top: 1em;
   width: 10em;
   height: 3px;
-  background-color: #c66579;
+  background-color: #ab5052;
   content: "\200B";
 }
 
@@ -1703,18 +1703,18 @@ blockquote:after {
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
   border-radius: 6px;
-  color: #937272;
+  color: #92696a;
   text-shadow: none;
 }
 /* line 49, ../sass/modules/_navs.scss */
 .nav > li > a:hover, .nav > li > a:focus, .nav > li > a:active {
-  background: #df7d85;
-  color: #3d2f2f;
+  background: #bda4a4;
+  color: #392929;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
 }
 /* line 57, ../sass/modules/_navs.scss */
 .nav a.active {
-  border-color: #c66579;
+  border-color: #92696a;
 }
 @media only screen and (max-width: 760px) {
   /* line 20, ../sass/modules/_navs.scss */
@@ -1749,7 +1749,7 @@ blockquote:after {
     -ms-border-radius: 0;
     -o-border-radius: 0;
     border-radius: 0;
-    border-bottom: 1px solid rgba(198, 101, 121, 0.15);
+    border-bottom: 1px solid rgba(171, 80, 82, 0.15);
   }
   /* line 95, ../sass/modules/_navs.scss */
   .nav--adaptive > .separate {
@@ -1765,12 +1765,12 @@ blockquote:after {
   }
   /* line 102, ../sass/modules/_navs.scss */
   .nav--adaptive > .current > a {
-    background: #dec0b2;
+    background: #d8bcaa;
     border-color: transparent;
   }
   /* line 107, ../sass/modules/_navs.scss */
   .nav--adaptive > .active > a {
-    background: #dec0b2;
+    background: #d8bcaa;
     border-color: transparent;
   }
 }
@@ -1812,12 +1812,12 @@ blockquote:after {
   margin-right: 1.5rem;
   margin-left: 24px;
   margin-left: 1.5rem;
-  color: #c66579;
+  color: #92696a;
   text-shadow: none;
 }
 /* line 17, ../sass/modules/_logo.scss */
 .logo:hover, .logo:focus, .logo:active {
-  color: #c66579;
+  color: #92696a;
   background: transparent;
   text-decoration: none;
 }
@@ -2150,7 +2150,7 @@ a.thumbnail {
 }
 /* line 57, ../sass/modules/_thumbnails.scss */
 a.thumbnail:hover, a.thumbnail:focus, a.thumbnail:active {
-  border-color: #c66579;
+  border-color: #ab5052;
 }
 
 /************************************************************************************

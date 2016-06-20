@@ -98,6 +98,16 @@ $link-color: $mixdreams-link-color;
 $link-hover-color: $mixdreams-link-soft-color;
 
 
+$link-color: mix(#ab5052, $mixdreams-link-color, 30);
+$link-hover-color: lighten($link-color, 2);
+$link-hover-color: desaturate($link-color, 8);
+$brand-color: $link-hover-color;
+
+$link-color: #ab5052;
+$brand-color: desaturate($link-color, 20);
+$link-hover-color: lighten($brand-color, 20);
+
+
 
 
 // Base color theme
@@ -116,6 +126,8 @@ $base-light-bg: darken(mix($mixdreams-bg,mix($stas-bg, #fff, 80), 40), 7);
 $base-bg: darken(mix($mixdreams-bg,mix($stas-bg, #fff, 80), 50), 8);
 $base-bg: $base-light-bg; // #e4d7c1;
 
+//$base-bg: mix(#dedede, #e4d7c1);
+
 
 
 // Dark color theme
@@ -124,7 +136,13 @@ $base-bg: $base-light-bg; // #e4d7c1;
 $dark-bg: mix(#18101f, #221724); // #1d1321
 $dark-bg: mix(#18101f, #221724, 10);
 $dark-bg: #201720;
+//$dark-bg: mix(#18181c, #201720);
+
 $dark-text: mix($brand-color, mix($base-light-bg, $dark-bg, 50), 25); // #937272;
+$dark-text: lighten(mix($mixdreams-link-color, mix($base-light-bg, $dark-bg, 50), 25), 4);
+$dark-text: lighten(mix($brand-color, mix($base-light-bg, $dark-bg, 50), 25), 4);
+
+$dark-text: $brand-color;
 
 
 
@@ -133,7 +151,7 @@ $dark-text: mix($brand-color, mix($base-light-bg, $dark-bg, 50), 25); // #937272
 
 $button-text: darken($dark-text, 30);
 $button-color: $link-color;
-$button-fill-color: $mixdreams-link-soft-color;
+$button-fill-color: $link-hover-color;
 
 
 
@@ -158,8 +176,8 @@ $headings-line-height:  $line-height-small;
 $headings-font-family: $font-family-sans-serif-light-400;
 
 
-$font-size-h1: 1.5;
-$font-size-h2: 1.35;
+$font-size-h1: 1.4;
+$font-size-h2: 1.3;
 $font-size-h3: 1.2;
 
 

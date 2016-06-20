@@ -57,7 +57,7 @@ a {
      text-decoration: none;
 
      &:hover, &:focus, &:active {
-         background: $link-hover-color;
+         background: $button-fill-color;
          color: $button-text;
          // text-decoration: underline;
      }
