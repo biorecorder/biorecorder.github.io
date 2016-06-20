@@ -107,6 +107,10 @@ $link-color: #ab5052;
 $brand-color: desaturate($link-color, 20);
 $link-hover-color: lighten($brand-color, 20);
 
+$brand-color: darken(desaturate(#c97f7f, 15), 10);
+$link-color: $brand-color;
+$link-hover-color: lighten($brand-color, 10);
+
 
 
 
@@ -126,7 +130,7 @@ $base-light-bg: darken(mix($mixdreams-bg,mix($stas-bg, #fff, 80), 40), 7);
 $base-bg: darken(mix($mixdreams-bg,mix($stas-bg, #fff, 80), 50), 8);
 $base-bg: $base-light-bg; // #e4d7c1;
 
-//$base-bg: mix(#dedede, #e4d7c1);
+$base-bg: mix(#dedede, #e4d7c1);
 
 
 
@@ -136,7 +140,8 @@ $base-bg: $base-light-bg; // #e4d7c1;
 $dark-bg: mix(#18101f, #221724); // #1d1321
 $dark-bg: mix(#18101f, #221724, 10);
 $dark-bg: #201720;
-//$dark-bg: mix(#18181c, #201720);
+$dark-bg: mix(#18181c, #201720);
+
 
 $dark-text: mix($brand-color, mix($base-light-bg, $dark-bg, 50), 25); // #937272;
 $dark-text: lighten(mix($mixdreams-link-color, mix($base-light-bg, $dark-bg, 50), 25), 4);
