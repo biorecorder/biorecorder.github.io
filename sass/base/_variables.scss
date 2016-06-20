@@ -107,7 +107,7 @@ $link-color: #ab5052;
 $brand-color: desaturate($link-color, 20);
 $link-hover-color: lighten($brand-color, 20);
 
-$brand-color: darken(desaturate(#c97f7f, 15), 10);
+$brand-color: darken(desaturate(#c97f7f, 20), 10);
 $link-color: $brand-color;
 $link-hover-color: lighten($brand-color, 10);
 
