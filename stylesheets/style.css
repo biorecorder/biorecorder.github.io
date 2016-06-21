@@ -1723,7 +1723,7 @@ blockquote:after {
   /* line 71, ../sass/modules/_navs.scss */
   .nav--adaptive {
     display: none;
-    background: #dfd6c7;
+    background: #ddd6cb;
     margin: 0;
     margin-top: 50px;
     padding-top: 50px;
@@ -1760,12 +1760,12 @@ blockquote:after {
   }
   /* line 102, ../sass/modules/_navs.scss */
   .nav--adaptive > .current > a {
-    background: #d4bdb2;
+    background: #d2bdb5;
     border-color: transparent;
   }
   /* line 107, ../sass/modules/_navs.scss */
   .nav--adaptive > .active > a {
-    background: #d4bdb2;
+    background: #d2bdb5;
     border-color: transparent;
   }
 }
@@ -2078,7 +2078,7 @@ Post, Articles
   margin: 0;
   padding-top: 0.5em;
   padding-bottom: 1.5em;
-  background: #dfd6c7;
+  background: #ddd6cb;
   color: #372b1d;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
 }
@@ -2170,7 +2170,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail:active {
 
 /* line 14, ../sass/modules/_page-content.scss */
 .page-content {
-  background: #dfd6c7;
+  background: #ddd6cb;
   color: #372b1d;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
   flex: 1 0 auto;
