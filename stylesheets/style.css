@@ -785,7 +785,7 @@ p {
  UTILITIES. Helper classes
 *************************************************************************************/
 /* line 7, ../sass/modules/_utilities.scss */
-.paddings, .page-footer {
+.paddings {
   padding-left: 1em;
   padding-right: 1em;
 }
@@ -1029,15 +1029,11 @@ p {
 /************************************************************************************
 COLORS
 *************************************************************************************/
-/* line 7, ../sass/modules/_colors.scss */
-.light {
-  background: #e4d7c1;
-}
-
-/* line 11, ../sass/modules/_colors.scss */
-.dark {
+/* line 6, ../sass/modules/_colors.scss */
+.dark, .navbar {
   background: #1c171e;
-  color: #a37272;
+  color: #b29c96;
+  text-shadow: none;
 }
 
 /************************************************************************************
@@ -1067,45 +1063,51 @@ html {
   }
 }
 
-/* line 32, ../sass/modules/_!main.scss */
+/* line 31, ../sass/modules/_!main.scss */
 body {
   font-size: 1.1em;
   font-style: normal;
   font-variant: normal;
   line-height: 1.667;
   background: #1c171e;
-  color: #a37272;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
+  color: #b29c96;
 }
 
-/* line 42, ../sass/modules/_!main.scss */
+/* line 40, ../sass/modules/_!main.scss */
 html, body {
   height: 100%;
+}
+
+/* line 46, ../sass/modules/_!main.scss */
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /**
 *  Give Clickable Elements a Pointer Cursor
 *  Source: http://css-tricks.com/snippets/css/give-clickable-elements-a-pointer-cursor/
 **/
-/* line 51, ../sass/modules/_!main.scss */
+/* line 57, ../sass/modules/_!main.scss */
 a[href], input[type='submit'], input[type='image'], label[for], select, button, .pointer {
   cursor: pointer;
 }
 
-/* line 55, ../sass/modules/_!main.scss */
+/* line 61, ../sass/modules/_!main.scss */
 a {
-  color: #a37272;
+  color: #a85d60;
   text-decoration: none;
 }
-/* line 59, ../sass/modules/_!main.scss */
+/* line 65, ../sass/modules/_!main.scss */
 a:hover, a:focus, a:active {
-  background: #b79191;
-  color: #4b3131;
+  background: #b08c8b;
+  color: #2a211f;
 }
 
-/* line 66, ../sass/modules/_!main.scss */
+/* line 72, ../sass/modules/_!main.scss */
 ::-moz-selection, ::selection {
-  background: #a37272;
+  background: #a85d60;
   color: white;
 }
 
@@ -1116,29 +1118,29 @@ a:hover, a:focus, a:active {
  *  It is more logical that the position of the object depends upon it´s own properties(margin-top)
  *  and not upon the properties (margin-bottom) of the previous object
  */
-/* line 79, ../sass/modules/_!main.scss */
+/* line 85, ../sass/modules/_!main.scss */
 p {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
 
-/* line 84, ../sass/modules/_!main.scss */
+/* line 90, ../sass/modules/_!main.scss */
 i, em, q {
   font-style: italic;
 }
 
-/* line 89, ../sass/modules/_!main.scss */
+/* line 95, ../sass/modules/_!main.scss */
 hr {
   width: 5em;
   text-align: center;
   margin: 2em auto;
   border: none;
   height: 3px;
-  background-color: #a37272;
-  color: #a37272;
+  background-color: #a85d60;
+  color: #a85d60;
 }
 
-/* line 105, ../sass/modules/_!main.scss */
+/* line 111, ../sass/modules/_!main.scss */
 cite {
   font-size: 13.6px;
   font-size: 0.85rem;
@@ -1147,12 +1149,12 @@ cite {
   text-align: center;
   font-style: italic;
 }
-/* line 113, ../sass/modules/_!main.scss */
+/* line 119, ../sass/modules/_!main.scss */
 cite:before {
   content: "\2014 \2009";
 }
 
-/* line 118, ../sass/modules/_!main.scss */
+/* line 124, ../sass/modules/_!main.scss */
 .cite--big {
   font-size: 16px;
   font-size: 1rem;
@@ -1179,18 +1181,18 @@ h1, h2, h3, h4, h5, h6 {
 /* line 20, ../sass/modules/_headings.scss */
 h1 {
   margin-top: 1.5em;
-  font-size: 1.54em;
+  font-size: 1.43em;
 }
 @media only screen and (min-width: 1000px) {
   /* line 20, ../sass/modules/_headings.scss */
   h1 {
-    font-size: 1.68em;
+    font-size: 1.56em;
   }
 }
 @media only screen and (max-width: 760px) {
   /* line 20, ../sass/modules/_headings.scss */
   h1 {
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
 }
 
@@ -1238,8 +1240,8 @@ h3 {
   font-weight: bold;
   margin-top: 0;
   padding-top: 0.5em;
-  font-size: 20.16px;
-  font-size: 1.26rem;
+  font-size: 18.72px;
+  font-size: 1.17rem;
   max-width: 672px;
   max-width: 42rem;
   margin-right: 24px;
@@ -1276,7 +1278,7 @@ h3 {
   margin-bottom: 1em;
   width: 10em;
   height: 3px;
-  background-color: #a37272;
+  background-color: #a85d60;
   content: "​";
 }
 
@@ -1304,8 +1306,8 @@ h3 {
 .button, #toTop {
   margin: 1em 0.5em;
   padding: 0.5em 1.5em;
-  color: #a37272;
-  border: 2px solid #a37272;
+  color: #a85d60;
+  border: 2px solid #a85d60;
   -moz-border-radius: 24px;
   -webkit-border-radius: 24px;
   -ms-border-radius: 24px;
@@ -1316,23 +1318,23 @@ h3 {
 .button:hover, #toTop:hover, .button:focus, #toTop:focus, .button:active, #toTop:active {
   text-decoration: none;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
-  color: #4b3131;
-  background: #b79191;
-  border-color: #b79191;
+  color: #2a211f;
+  background: #b08c8b;
+  border-color: #b08c8b;
 }
 
 /* line 67, ../sass/modules/_buttons.scss */
 .button--filled {
-  background: #a37272;
-  color: #4b3131;
+  background: #b29c96;
+  color: #2a211f;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
-  border: 2px solid #a37272;
+  border: 2px solid #b29c96;
 }
 /* line 34, ../sass/modules/_buttons.scss */
 .button--filled:hover, .button--filled:focus, .button--filled:active {
   text-decoration: none;
-  color: #a37272;
-  border-color: #a37272;
+  color: #a85d60;
+  border-color: #a85d60;
   background: none;
   text-shadow: none;
 }
@@ -1599,8 +1601,8 @@ blockquote hr {
   margin: 0.5em auto;
   width: 10em;
   height: 1px;
-  background-color: #a37272;
-  color: #a37272;
+  background-color: #a85d60;
+  color: #a85d60;
 }
 /* line 34, ../sass/modules/_blockquote.scss */
 blockquote:after {
@@ -1608,7 +1610,7 @@ blockquote:after {
   margin-top: 1em;
   width: 10em;
   height: 3px;
-  background-color: #a37272;
+  background-color: #a85d60;
   content: "\200B";
 }
 
@@ -1703,18 +1705,18 @@ blockquote:after {
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
   border-radius: 6px;
-  color: #a37272;
-  text-shadow: none;
+  color: #b29c96;
 }
-/* line 49, ../sass/modules/_navs.scss */
+/* line 48, ../sass/modules/_navs.scss */
 .nav > li > a:hover, .nav > li > a:focus, .nav > li > a:active {
-  background: #b79191;
-  color: #4b3131;
+  background: #b08c8b;
+  color: #2a211f;
+  text-shadow: none;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
 }
 /* line 57, ../sass/modules/_navs.scss */
 .nav a.active {
-  border-color: #a37272;
+  border-color: #b29c96;
 }
 @media only screen and (max-width: 760px) {
   /* line 20, ../sass/modules/_navs.scss */
@@ -1728,7 +1730,7 @@ blockquote:after {
   /* line 71, ../sass/modules/_navs.scss */
   .nav--adaptive {
     display: none;
-    background: #e1dacf;
+    background: #ddd6cb;
     margin: 0;
     margin-top: 50px;
     padding-top: 50px;
@@ -1749,7 +1751,7 @@ blockquote:after {
     -ms-border-radius: 0;
     -o-border-radius: 0;
     border-radius: 0;
-    border-bottom: 1px solid rgba(163, 114, 114, 0.15);
+    border-bottom: 1px solid rgba(168, 93, 96, 0.15);
   }
   /* line 95, ../sass/modules/_navs.scss */
   .nav--adaptive > .separate {
@@ -1765,12 +1767,12 @@ blockquote:after {
   }
   /* line 102, ../sass/modules/_navs.scss */
   .nav--adaptive > .current > a {
-    background: #d4c5bc;
+    background: #d2bdb5;
     border-color: transparent;
   }
   /* line 107, ../sass/modules/_navs.scss */
   .nav--adaptive > .active > a {
-    background: #d4c5bc;
+    background: #d2bdb5;
     border-color: transparent;
   }
 }
@@ -1791,6 +1793,12 @@ blockquote:after {
 /* line 9, ../sass/modules/_navbar.scss */
 .navbar {
   text-align: left;
+  margin-bottom: 0.25em;
+  margin-left: 1em;
+  margin-right: 1em;
+  box-shadow: 0 0 8px rgba(17, 17, 17, 0.4);
+  -webkit-box-shadow: 0 0 8px rgba(17, 17, 17, 0.4);
+  -moz-box-shadow: 0 0 8px rgba(17, 17, 17, 0.4);
 }
 
 /************************************************************************************
@@ -1812,12 +1820,11 @@ blockquote:after {
   margin-right: 1.5rem;
   margin-left: 24px;
   margin-left: 1.5rem;
-  color: #a37272;
-  text-shadow: none;
+  color: #b29c96;
 }
-/* line 18, ../sass/modules/_logo.scss */
+/* line 15, ../sass/modules/_logo.scss */
 .logo:hover, .logo:focus, .logo:active {
-  color: #a37272;
+  color: #b29c96;
   background: transparent;
   text-decoration: none;
 }
@@ -1836,14 +1843,14 @@ Containers:  ROW, COLUMN and FLUID
  */
 /* line 16, ../sass/modules/_containers.scss */
 .central-wide {
-  max-width: 896px;
-  max-width: 56rem;
+  max-width: 992px;
+  max-width: 62rem;
 }
 
 /* line 21, ../sass/modules/_containers.scss */
 .central-page {
-  max-width: 896px;
-  max-width: 56rem;
+  max-width: 992px;
+  max-width: 62rem;
 }
 
 /* line 27, ../sass/modules/_containers.scss */
@@ -2077,17 +2084,19 @@ Post, Articles
   */
 /* line 7, ../sass/modules/_post.scss */
 .post {
+  margin: 0;
   padding-top: 0.5em;
-  padding-bottom: 3em;
-  background: #e1dacf;
-  color: #1c160f;
+  padding-bottom: 1.5em;
+  background: #ddd6cb;
+  color: #372b1d;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
 }
-/* line 16, ../sass/modules/_post.scss */
+/* line 17, ../sass/modules/_post.scss */
 .post blockquote p, .post .pullquote p {
   padding-left: 0;
   padding-right: 0;
 }
-/* line 21, ../sass/modules/_post.scss */
+/* line 22, ../sass/modules/_post.scss */
 .post .lead {
   max-width: 806.4px;
   max-width: 50.4rem;
@@ -2150,7 +2159,7 @@ a.thumbnail {
 }
 /* line 57, ../sass/modules/_thumbnails.scss */
 a.thumbnail:hover, a.thumbnail:focus, a.thumbnail:active {
-  border-color: #a37272;
+  border-color: #a85d60;
 }
 
 /************************************************************************************
@@ -2161,12 +2170,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail:active {
 *************************************************************************************/
 /* line 5, ../sass/modules/_page-content.scss */
 .page-content {
-  margin-top: 1em;
-  background: #e1dacf;
-  color: #1c160f;
-  min-height: 80%;
-  height: auto !important;
-  height: 80%;
+  flex: 1;
 }
 
 /************************************************************************************
@@ -2174,11 +2178,14 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail:active {
 *************************************************************************************/
 /* line 5, ../sass/modules/_page-footer.scss */
 .page-footer {
-  background-color: #e1dacf;
-  padding-bottom: 1em;
-  box-shadow: 0 0 8px rgba(17, 17, 17, 0.6);
-  -webkit-box-shadow: 0 0 8px rgba(17, 17, 17, 0.6);
-  -moz-box-shadow: 0 0 8px rgba(17, 17, 17, 0.6);
+  margin: 0;
+  padding-left: 1em;
+  padding-right: 1em;
+  flex: none;
+  text-shadow: none;
+  /*  box-shadow: 0 0 8px rgba($base-strong, 0.6);
+    -webkit-box-shadow: 0 0 8px rgba($base-strong, 0.6);
+    -moz-box-shadow: 0 0 8px rgba($base-strong, 0.6); */
 }
 
 /**

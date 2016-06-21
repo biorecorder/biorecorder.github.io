@@ -7,8 +7,17 @@
  */
 
 .navbar {
-   //@extend .highlight;
    @extend %clearfix;
+   @extend .dark;
    text-align: left;
+
+    margin-bottom: $gap-mini;
+    margin-left: $gap-base;
+    margin-right: $gap-base;
+
+    box-shadow: 0 0 8px rgba($base-strong, 0.4);
+    -webkit-box-shadow: 0 0 8px rgba($base-strong, 0.4);
+    -moz-box-shadow: 0 0 8px rgba($base-strong, 0.4);
+
 }
 

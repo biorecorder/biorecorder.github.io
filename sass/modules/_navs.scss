@@ -43,12 +43,12 @@
             text-decoration: none;
             border-bottom: 1px solid transparent;
             @include border-radius($border-radius);
-            color: $dark-text;
-            text-shadow: none;
+            color: $brand-color;
 
             &:hover, &:focus, &:active {
                background: $button-fill-color;
                color: $button-text;
+               text-shadow: none;
                text-shadow: 0 1px 1px rgba(white, 0.4);
             }
         }

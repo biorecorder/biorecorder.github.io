@@ -17,7 +17,6 @@ html {
     /* improves the text rendering in more recent browsers */
     text-rendering: optimizeLegibility;
 
-
     background: $dark-bg;
 
     @include breakpoint(big) {
@@ -36,11 +35,18 @@ body {
     line-height: $base-line-height;
     background: $dark-bg;
     color: $dark-text;
-    text-shadow: 0 1px 1px rgba(white, 0.4);
 }
 
 html, body {
   height: 100%;
+}
+
+// Прижать футер книзу  http://dimox.name/press_footer_bottom_with_css
+
+.site {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
 }
 
 /**

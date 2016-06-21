@@ -3,13 +3,5 @@
 *************************************************************************************/
 
 .page-content {
-    margin-top: $gap-base;
-    background: $base-bg;
-    color: $base-text;
-
-    // Cross-Browser Min Height http://css-tricks.com/snippets/css/cross-browser-min-height
-    // Прижатый к низу футер http://verstka.pro/notes/prizhatyy-k-nizu-futer.html
-    min-height: 80%;
-    height: auto !important;
-    height: 80%;
+    flex: 1;
 }

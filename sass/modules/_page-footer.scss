@@ -3,13 +3,17 @@
 *************************************************************************************/
 
 .page-footer {
-    background-color: $base-bg;
-    @extend .paddings;
-    padding-bottom: $gap-base;
+    margin: 0;
+    padding-left: $gap-base;
+    padding-right: $gap-base;
+    flex: none;
+    text-shadow: none;
+   // text-shadow: 0.1em 0.1em 0.2em black;
+   // background: $footer-bg;
 
-    box-shadow: 0 0 8px rgba($base-strong, 0.6);
+  /*  box-shadow: 0 0 8px rgba($base-strong, 0.6);
     -webkit-box-shadow: 0 0 8px rgba($base-strong, 0.6);
-    -moz-box-shadow: 0 0 8px rgba($base-strong, 0.6);
+    -moz-box-shadow: 0 0 8px rgba($base-strong, 0.6); */
 }
 
 
