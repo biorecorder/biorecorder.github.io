@@ -94,12 +94,14 @@ $link-hover-color: mix(desaturate($brand-color, 8), lighten($link-color, 8));
 $base-font-family: $font-family-sans-serif-light-400;
 
 $base-intense-bg:  #e4d7c1;
+
+$base-bg:  mix(#dedede, #e4d7c1, 30);
 $base-bg: mix(#dedede, #e4d7c1, 50); // #e1dacf;
 $base-bg: #e3ddd3;  // stas-cover
 
-//$base-bg:  mix(#dedede, #e4d7c1, 30);;
 
-$base-bg: mix(#d6d6d6, #e4d7c1, 50); // #ddd6cb;;
+$base-bg: mix(#d6d6d6, #e4d7c1, 50); // #ddd6cb;
+$base-bg: mix(#d6d6d6, #e4d7c1, 30); // #dfd6c7;
 
 $base-strong: #111;
 $base-text: darken(#5F4B32, 12);

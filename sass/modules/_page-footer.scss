@@ -4,9 +4,10 @@
 
 .page-footer {
     margin: 0;
-    padding-left: $gap-base;
-    padding-right: $gap-base;
-    flex: none;
+    padding: $gap-base;
+    padding-top: 0;
+    padding-bottom: $gap-mini;
+
     text-shadow: none;
    // text-shadow: 0.1em 0.1em 0.2em black;
    // background: $footer-bg;

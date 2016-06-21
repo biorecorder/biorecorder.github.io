@@ -8,8 +8,8 @@
     padding-top: $gap-large;
     line-height: 1;
     font-size: $nav-font-size*1em;
-    @include rem-fallback(margin-right, $gap-base-rem);
-    @include rem-fallback(margin-left, $gap-base-rem);
+    margin-left: $gap-small;
+    margin-right: $gap-base;
     color: $brand-color;
 
     &:hover, &:focus, &:active {
