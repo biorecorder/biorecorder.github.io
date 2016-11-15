@@ -2194,17 +2194,14 @@ body {
 .main {
   /* flex: 1; would be enough but it looks bad in IE */
   flex: 1 0 auto;
-  background: #ff0000;
 }
 
-/* line 26, ../sass/modules/_page_blocks.scss */
+/* line 25, ../sass/modules/_page_blocks.scss */
 .content {
   background: #ddd6cb;
-  color: #372b1d;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
 }
 
-/* line 33, ../sass/modules/_page_blocks.scss */
+/* line 30, ../sass/modules/_page_blocks.scss */
 .footer {
   margin: 0;
   padding: 1em;
