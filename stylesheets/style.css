@@ -2199,9 +2199,11 @@ body {
 /* line 25, ../sass/modules/_page_blocks.scss */
 .content {
   background: #ddd6cb;
+  color: #372b1d;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
 }
 
-/* line 30, ../sass/modules/_page_blocks.scss */
+/* line 32, ../sass/modules/_page_blocks.scss */
 .footer {
   margin: 0;
   padding: 1em;
