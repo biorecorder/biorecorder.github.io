@@ -2178,29 +2178,63 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail:active {
     https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
 *************************************************************************************/
 /* line 8, ../sass/modules/_page_blocks.scss */
-html,
-body {
-  height: 100%;
-}
-
-/* line 13, ../sass/modules/_page_blocks.scss */
-.wrapper {
+.site {
   display: flex;
   flex-direction: column;
   height: 100%;
+  /* 1, 3 */
+}
+
+/* line 14, ../sass/modules/_page_blocks.scss */
+.header,
+.footer {
+  flex: none;
+  /* 2 */
 }
 
 /* line 19, ../sass/modules/_page_blocks.scss */
 .content {
   flex: 1 0 auto;
+  /* 2 */
+  padding: var(--space) var(--space) 0;
+  width: 100%;
+  background: #ddd6cb;
+  color: #372b1d;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
 }
 
-/* line 23, ../sass/modules/_page_blocks.scss */
-.footer {
-  flex: 0 0 auto;
+/* line 29, ../sass/modules/_page_blocks.scss */
+.content::after {
+  content: '\00a0';
+  /* &nbsp; */
+  display: block;
+  margin-top: var(--space);
+  height: 0px;
+  visibility: hidden;
 }
 
-/* line 28, ../sass/modules/_page_blocks.scss */
+@media (--break-lg) {
+  /* line 37, ../sass/modules/_page_blocks.scss */
+  .content {
+    padding-top: var(--space-lg);
+  }
+
+  /* line 40, ../sass/modules/_page_blocks.scss */
+  .content::after {
+    margin-top: var(--space-lg);
+  }
+}
+/* line 45, ../sass/modules/_page_blocks.scss */
+.content--full {
+  padding: 0;
+}
+
+/* line 48, ../sass/modules/_page_blocks.scss */
+.content--full::after {
+  content: none;
+}
+
+/* line 52, ../sass/modules/_page_blocks.scss */
 .footer {
   margin: 0;
   padding: 1em;
