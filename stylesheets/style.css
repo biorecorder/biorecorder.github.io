@@ -2196,7 +2196,6 @@ html, body {
   background: #ddd6cb;
   color: #372b1d;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
-  flex: 1 0 auto;
 }
 
 /* line 28, ../sass/modules/_page_blocks.scss */
