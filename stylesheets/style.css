@@ -2178,25 +2178,20 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail:active {
     http://codepen.io/devatrox/pen/wztlx
     https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
 *************************************************************************************/
-/* line 11, ../sass/modules/_page_blocks.scss */
-html,
-body {
+/* line 9, ../sass/modules/_page_blocks.scss */
+html {
   height: 100%;
 }
 
-/* line 15, ../sass/modules/_page_blocks.scss */
-.wrapper {
+/* line 13, ../sass/modules/_page_blocks.scss */
+body {
+  min-height: 100%;
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
 
-/* line 20, ../sass/modules/_page_blocks.scss */
-.content {
+/* line 19, ../sass/modules/_page_blocks.scss */
+.content, main {
+  /* flex: 1; would be enough but it looks bad in IE */
   flex: 1 0 auto;
-}
-
-/* line 23, ../sass/modules/_page_blocks.scss */
-.footer {
-  flex: 0 0 auto;
 }
