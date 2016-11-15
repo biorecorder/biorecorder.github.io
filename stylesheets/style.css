@@ -1073,32 +1073,27 @@ body {
   color: #b29c96;
 }
 
-/* line 40, ../sass/modules/_!main.scss */
-html, body {
-  height: 100%;
-}
-
 /**
 *  Give Clickable Elements a Pointer Cursor
 *  Source: http://css-tricks.com/snippets/css/give-clickable-elements-a-pointer-cursor/
 **/
-/* line 53, ../sass/modules/_!main.scss */
+/* line 46, ../sass/modules/_!main.scss */
 a[href], input[type='submit'], input[type='image'], label[for], select, button, .pointer {
   cursor: pointer;
 }
 
-/* line 57, ../sass/modules/_!main.scss */
+/* line 50, ../sass/modules/_!main.scss */
 a {
   color: #a85d60;
   text-decoration: none;
 }
-/* line 61, ../sass/modules/_!main.scss */
+/* line 54, ../sass/modules/_!main.scss */
 a:hover, a:focus, a:active {
   background: #b08c8b;
   color: #2a211f;
 }
 
-/* line 68, ../sass/modules/_!main.scss */
+/* line 61, ../sass/modules/_!main.scss */
 ::-moz-selection, ::selection {
   background: #a85d60;
   color: white;
@@ -1111,18 +1106,18 @@ a:hover, a:focus, a:active {
  *  It is more logical that the position of the object depends upon it´s own properties(margin-top)
  *  and not upon the properties (margin-bottom) of the previous object
  */
-/* line 81, ../sass/modules/_!main.scss */
+/* line 74, ../sass/modules/_!main.scss */
 p {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
 
-/* line 86, ../sass/modules/_!main.scss */
+/* line 79, ../sass/modules/_!main.scss */
 i, em, q {
   font-style: italic;
 }
 
-/* line 91, ../sass/modules/_!main.scss */
+/* line 84, ../sass/modules/_!main.scss */
 hr {
   width: 5em;
   text-align: center;
@@ -1133,7 +1128,7 @@ hr {
   color: #a85d60;
 }
 
-/* line 107, ../sass/modules/_!main.scss */
+/* line 100, ../sass/modules/_!main.scss */
 cite {
   font-size: 13.6px;
   font-size: 0.85rem;
@@ -1142,12 +1137,12 @@ cite {
   text-align: center;
   font-style: italic;
 }
-/* line 115, ../sass/modules/_!main.scss */
+/* line 108, ../sass/modules/_!main.scss */
 cite:before {
   content: "\2014 \2009";
 }
 
-/* line 120, ../sass/modules/_!main.scss */
+/* line 113, ../sass/modules/_!main.scss */
 .cite--big {
   font-size: 16px;
   font-size: 1rem;
@@ -2153,50 +2148,6 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail:active {
   border-color: #a85d60;
 }
 
-/************************************************************************************
-    Page Header
-*************************************************************************************/
-/************************************************************************************
-    Flex to stick footer down
-    https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
-*************************************************************************************/
-/* line 7, ../sass/modules/_page-content.scss */
-.site {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  min-height: 100vh;
-}
-
-/* line 14, ../sass/modules/_page-content.scss */
-.page-content {
-  background: #ddd6cb;
-  color: #372b1d;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
-  flex: 1 0 auto;
-}
-
-/* line 22, ../sass/modules/_page-content.scss */
-.navbar,
-.page-footer {
-  flex: none;
-}
-
-/************************************************************************************
-    Page footer
-*************************************************************************************/
-/* line 5, ../sass/modules/_page-footer.scss */
-.page-footer {
-  margin: 0;
-  padding: 1em;
-  padding-top: 0;
-  padding-bottom: 0.25em;
-  text-shadow: none;
-  /*  box-shadow: 0 0 8px rgba($base-strong, 0.6);
-    -webkit-box-shadow: 0 0 8px rgba($base-strong, 0.6);
-    -moz-box-shadow: 0 0 8px rgba($base-strong, 0.6); */
-}
-
 /**
  * Zebra. To slightly change background color like in  Zebra Striping Table, List and etc
  * Zebra is used to separate content by slight variance of background color
@@ -2219,4 +2170,44 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail:active {
 .zebra .zebra__item:nth-child(even),
 .zebra > li:nth-child(even) {
   background: #e4d7c1;
+}
+
+/************************************************************************************
+    Flex to stick footer down
+    http://dimox.name/press_footer_bottom_with_css
+    https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
+*************************************************************************************/
+/* line 8, ../sass/modules/_page_blocks.scss */
+html,
+body {
+  height: 100%;
+}
+
+/* line 13, ../sass/modules/_page_blocks.scss */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* line 19, ../sass/modules/_page_blocks.scss */
+.content {
+  flex: 1 0 auto;
+}
+
+/* line 23, ../sass/modules/_page_blocks.scss */
+.footer {
+  flex: 0 0 auto;
+}
+
+/* line 28, ../sass/modules/_page_blocks.scss */
+.footer {
+  margin: 0;
+  padding: 1em;
+  padding-top: 0;
+  padding-bottom: 0.25em;
+  text-shadow: none;
+  /*  box-shadow: 0 0 8px rgba($base-strong, 0.6);
+    -webkit-box-shadow: 0 0 8px rgba($base-strong, 0.6);
+    -moz-box-shadow: 0 0 8px rgba($base-strong, 0.6); */
 }
