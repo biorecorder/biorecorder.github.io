@@ -2175,22 +2175,28 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail:active {
 /************************************************************************************
     Flex to stick footer down
     http://dimox.name/press_footer_bottom_with_css
+    http://codepen.io/devatrox/pen/wztlx
     https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
 *************************************************************************************/
-/* line 8, ../sass/modules/_page_blocks.scss */
-html {
+/* line 11, ../sass/modules/_page_blocks.scss */
+html,
+body {
   height: 100%;
 }
 
-/* line 12, ../sass/modules/_page_blocks.scss */
-body {
-  min-height: 100%;
+/* line 15, ../sass/modules/_page_blocks.scss */
+.wrapper {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
-/* line 18, ../sass/modules/_page_blocks.scss */
-.content, main {
-  /* flex: 1; would be enough but it looks bad in IE */
+/* line 20, ../sass/modules/_page_blocks.scss */
+.content {
   flex: 1 0 auto;
+}
+
+/* line 23, ../sass/modules/_page_blocks.scss */
+.footer {
+  flex: 0 0 auto;
 }
