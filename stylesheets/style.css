@@ -2186,15 +2186,17 @@ html {
 /* line 13, ../sass/modules/_page_blocks.scss */
 body {
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-/* line 17, ../sass/modules/_page_blocks.scss */
+/* line 19, ../sass/modules/_page_blocks.scss */
 .content {
   /* flex: 1; would be enough but it looks bad in IE */
   flex: 1 0 auto;
 }
 
-/* line 23, ../sass/modules/_page_blocks.scss */
+/* line 25, ../sass/modules/_page_blocks.scss */
 .footer {
   flex: 0 0 auto;
 }
