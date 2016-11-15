@@ -2191,7 +2191,7 @@ body {
 }
 
 /* line 19, ../sass/modules/_page_blocks.scss */
-.content {
+.main {
   /* flex: 1; would be enough but it looks bad in IE */
   flex: 1 0 auto;
   background: #ff0000;
