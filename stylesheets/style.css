@@ -2198,12 +2198,6 @@ html, body {
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
 }
 
-/* line 28, ../sass/modules/_page_blocks.scss */
-.header,
-.footer {
-  flex: none;
-}
-
 /* line 33, ../sass/modules/_page_blocks.scss */
 .footer {
   margin: 0;
