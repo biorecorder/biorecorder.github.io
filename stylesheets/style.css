@@ -2184,25 +2184,24 @@ html, body {
 }
 
 /* line 13, ../sass/modules/_page_blocks.scss */
-.site {
+body {
+  min-height: 100%;
   display: flex;
   flex-direction: column;
-  height: 100%;
-  min-height: 100vh;
 }
 
-/* line 20, ../sass/modules/_page_blocks.scss */
+/* line 19, ../sass/modules/_page_blocks.scss */
+.content {
+  /* flex: 1; would be enough but it looks bad in IE */
+  flex: 1 0 auto;
+  background: #ff0000;
+}
+
+/* line 26, ../sass/modules/_page_blocks.scss */
 .content {
   background: #ddd6cb;
   color: #372b1d;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
-  flex: 1 0 auto;
-}
-
-/* line 28, ../sass/modules/_page_blocks.scss */
-.header,
-.footer {
-  flex: none;
 }
 
 /* line 33, ../sass/modules/_page_blocks.scss */
