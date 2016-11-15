@@ -1,0 +1,24 @@
+
+permalink:        /:categories/:title.html
+
+paginate:         10
+
+pygments:         true
+markdown:         kramdown
+
+exclude: ["Rakefile", 'sass/']
+
+
+title:            BioRecorder
+
+
+# Website url address.
+# It must be a valid url.
+# This means always setting the protocol (http|https) or prefixing with "/"
+url:        http://biorecorder.com/
+
+#   - When in localhost, the site will run from root "/" regardless of url
+#   - Only the following values are falsy: ["", null, false]
+localhost:  true
+
+
