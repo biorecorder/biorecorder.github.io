@@ -6,7 +6,7 @@ paginate:         10
 pygments:         true
 markdown:         kramdown
 
-exclude: ["Rakefile", 'sass/']
+exclude: ['README.md', "Rakefile", 'sass/']
 
 
 title:            BioRecorder
@@ -21,4 +21,26 @@ url:        http://biorecorder.com/
 #   - Only the following values are falsy: ["", null, false]
 localhost:  true
 
+
+# Base folder to store images.
+# In website we can use it to indicate image src: <img src="{{ site.img }}/img-name" >
+#
+# In YAML blok  liquid variables cant be used so there we write just img-name
+#
+# ---
+# header_img: img-name
+# ---
+#
+# and it will be converted then to {{site.img}}/img-name
+img:      /assets/images
+
+# Base folder to store css files.
+css:         /stylesheets
+
+# Base folder to store javascript files.
+js:  /assets/javascript
+
+
+
+description:  "Wireless 8 channels biopotential measurement system"
 
