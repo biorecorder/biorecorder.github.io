@@ -1409,12 +1409,12 @@ figcaption, .figcaption, .figure p {
   margin-bottom: 0;
 }
 
-/* line 53, ../sass/modules/_images.scss */
+/* line 52, ../sass/modules/_images.scss */
 .figure {
   margin-top: gap-large;
-  margin-bottom: gap-huge;
+  margin-bottom: 3em;
 }
-/* line 56, ../sass/modules/_images.scss */
+/* line 55, ../sass/modules/_images.scss */
 .figure img {
   margin-top: 0;
   margin-bottom: 0;

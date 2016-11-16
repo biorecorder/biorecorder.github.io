@@ -49,10 +49,9 @@ figcaption, .figcaption {
     margin-bottom: 0;
 }
 
-
 .figure {
     margin-top: gap-large;
-    margin-bottom: gap-huge;
+    margin-bottom: $gap-large*2;
     img {
         margin-top: 0;
         margin-bottom: 0;
@@ -62,6 +61,8 @@ figcaption, .figcaption {
         @extend .figcaption;
     }
 }
+
+
 
 
 
