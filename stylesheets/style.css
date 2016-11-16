@@ -1412,7 +1412,7 @@ figcaption, .figcaption, .figure p {
 /* line 53, ../sass/modules/_images.scss */
 .figure {
   margin-top: gap-large;
-  margin-bottom: gap-large;
+  margin-bottom: gap-huge;
 }
 /* line 56, ../sass/modules/_images.scss */
 .figure img {
