@@ -78,41 +78,31 @@ $border-radius: 6px;
 $border-radius-large:   24px;
 
 
+// Base color theme
+// ----------------------
+$base-font-family: $font-family-sans-serif-light-400;
+
+$base-intense-bg:  #ddd6cb;
+$base-bg: lighten(desaturate(#ddd6cb, 5), 10); // #f0eeeb;
+$base-strong: #111;
+$base-text: darken(#5F4B32, 12);
+
 
 // Brand staff
 // -------------------------
 $brand-font-size: 1.3;
 
-$brand-color: #b29c96;  // #a5938d; slightly darker
-$link-color: #a85d60;
-$link-hover-color: mix(desaturate($brand-color, 8), lighten($link-color, 8));
+$link-color: #990000;
+$brand-color: mix($base-bg, #660000,95);
+$link-hover-color: darken(mix($brand-color, $link-color, 60), 15);
+$link-hover-color: desaturate($link-hover-color, 5);
 
+$brand-color: darken(mix($base-bg, #660000,95), 4);
+$link-hover-color: darken(mix($brand-color, $link-color, 60), 5);
+$link-hover-color: desaturate($link-hover-color, 5);
 
-
-// Base color theme
-// ----------------------
-$base-font-family: $font-family-sans-serif-light-400;
-
-$base-intense-bg:  #e4d7c1;
-
-$base-bg:  mix(#dedede, #e4d7c1, 30);
-$base-bg: mix(#dedede, #e4d7c1, 50); // #e1dacf;
-$base-bg: #e3ddd3;  // stas-cover
-
-
-$base-bg: mix(#d6d6d6, #e4d7c1, 50); // #ddd6cb;
-//$base-bg: mix(#d6d6d6, #e4d7c1, 30); // #dfd6c7;
-
-$base-strong: #111;
-$base-text: darken(#5F4B32, 12);
-
-// interesting bg colors
-// ----------------------
-$bg1: darken(desaturate($brand-color, 8),25);
-$bg2: darken(desaturate($brand-color, 10),30);
-$bg3: darken(desaturate($brand-color, 10),35);
-$bg4: darken(desaturate($brand-color, 10),32);
-
+$link-hover-color: mix($brand-color, $link-color, 60);
+$link-hover-color: desaturate($link-hover-color, 3);
 
 
 // Dark color theme
@@ -125,7 +115,7 @@ $dark-text: $brand-color;
 // Buttons color
 // ----------------------
 
-$button-text: darken($brand-color, 50);
+$button-text: #000000;
 $button-color: $link-color;
 $button-fill-color: $link-hover-color;
 

@@ -1032,7 +1032,7 @@ COLORS
 /* line 6, ../sass/modules/_colors.scss */
 .dark, .navbar {
   background: #1c171e;
-  color: #b29c96;
+  color: #e1d7d3;
   text-shadow: none;
 }
 
@@ -1070,7 +1070,7 @@ body {
   font-variant: normal;
   line-height: 1.667;
   background: #1c171e;
-  color: #b29c96;
+  color: #e1d7d3;
 }
 
 /**
@@ -1084,18 +1084,20 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
 
 /* line 50, ../sass/modules/_!main.scss */
 a {
-  color: #a85d60;
+  color: #990000;
   text-decoration: none;
 }
 /* line 54, ../sass/modules/_!main.scss */
 a:hover, a:focus, a:active {
-  background: #b08c8b;
-  color: #2a211f;
+  background: #c18481;
+  color: #000000;
+  text-shadow: none;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
 }
 
-/* line 61, ../sass/modules/_!main.scss */
+/* line 63, ../sass/modules/_!main.scss */
 ::-moz-selection, ::selection {
-  background: #a85d60;
+  background: #990000;
   color: white;
 }
 
@@ -1106,29 +1108,29 @@ a:hover, a:focus, a:active {
  *  It is more logical that the position of the object depends upon it´s own properties(margin-top)
  *  and not upon the properties (margin-bottom) of the previous object
  */
-/* line 74, ../sass/modules/_!main.scss */
+/* line 76, ../sass/modules/_!main.scss */
 p {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
 
-/* line 79, ../sass/modules/_!main.scss */
+/* line 81, ../sass/modules/_!main.scss */
 i, em, q {
   font-style: italic;
 }
 
-/* line 84, ../sass/modules/_!main.scss */
+/* line 86, ../sass/modules/_!main.scss */
 hr {
   width: 5em;
   text-align: center;
   margin: 2em auto;
   border: none;
   height: 3px;
-  background-color: #a85d60;
-  color: #a85d60;
+  background-color: #990000;
+  color: #990000;
 }
 
-/* line 100, ../sass/modules/_!main.scss */
+/* line 102, ../sass/modules/_!main.scss */
 cite {
   font-size: 13.6px;
   font-size: 0.85rem;
@@ -1137,12 +1139,12 @@ cite {
   text-align: center;
   font-style: italic;
 }
-/* line 108, ../sass/modules/_!main.scss */
+/* line 110, ../sass/modules/_!main.scss */
 cite:before {
   content: "\2014 \2009";
 }
 
-/* line 113, ../sass/modules/_!main.scss */
+/* line 115, ../sass/modules/_!main.scss */
 .cite--big {
   font-size: 16px;
   font-size: 1rem;
@@ -1266,7 +1268,7 @@ h3 {
   margin-bottom: 1em;
   width: 10em;
   height: 3px;
-  background-color: #a85d60;
+  background-color: #990000;
   content: "​";
 }
 
@@ -1294,8 +1296,8 @@ h3 {
 .button, #toTop {
   margin: 1em 0.5em;
   padding: 0.5em 1.5em;
-  color: #a85d60;
-  border: 2px solid #a85d60;
+  color: #990000;
+  border: 2px solid #990000;
   -moz-border-radius: 24px;
   -webkit-border-radius: 24px;
   -ms-border-radius: 24px;
@@ -1306,23 +1308,23 @@ h3 {
 .button:hover, #toTop:hover, .button:focus, #toTop:focus, .button:active, #toTop:active {
   text-decoration: none;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
-  color: #2a211f;
-  background: #b08c8b;
-  border-color: #b08c8b;
+  color: #000000;
+  background: #c18481;
+  border-color: #c18481;
 }
 
 /* line 67, ../sass/modules/_buttons.scss */
 .button--filled {
-  background: #b29c96;
-  color: #2a211f;
+  background: #e1d7d3;
+  color: #000000;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
-  border: 2px solid #b29c96;
+  border: 2px solid #e1d7d3;
 }
 /* line 34, ../sass/modules/_buttons.scss */
 .button--filled:hover, .button--filled:focus, .button--filled:active {
   text-decoration: none;
-  color: #a85d60;
-  border-color: #a85d60;
+  color: #990000;
+  border-color: #990000;
   background: none;
   text-shadow: none;
 }
@@ -1589,8 +1591,8 @@ blockquote hr {
   margin: 0.5em auto;
   width: 10em;
   height: 1px;
-  background-color: #a85d60;
-  color: #a85d60;
+  background-color: #990000;
+  color: #990000;
 }
 /* line 34, ../sass/modules/_blockquote.scss */
 blockquote:after {
@@ -1598,7 +1600,7 @@ blockquote:after {
   margin-top: 1em;
   width: 10em;
   height: 3px;
-  background-color: #a85d60;
+  background-color: #990000;
   content: "\200B";
 }
 
@@ -1693,18 +1695,21 @@ blockquote:after {
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
   border-radius: 6px;
-  color: #b29c96;
+  color: #e1d7d3;
 }
 /* line 48, ../sass/modules/_navs.scss */
 .nav > li > a:hover, .nav > li > a:focus, .nav > li > a:active {
-  background: #b08c8b;
-  color: #2a211f;
+  background: #c18481;
+  color: #000000;
   text-shadow: none;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
 }
 /* line 57, ../sass/modules/_navs.scss */
 .nav a.active {
-  border-color: #b29c96;
+  background: #c18481;
+  color: #000000;
+  text-shadow: none;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
 }
 @media only screen and (max-width: 760px) {
   /* line 20, ../sass/modules/_navs.scss */
@@ -1715,22 +1720,22 @@ blockquote:after {
 }
 
 @media only screen and (max-width: 760px) {
-  /* line 71, ../sass/modules/_navs.scss */
+  /* line 75, ../sass/modules/_navs.scss */
   .nav--adaptive {
     display: none;
-    background: #ddd6cb;
+    background: #f0eeeb;
     margin: 0;
     margin-top: 50px;
     padding-top: 50px;
   }
-  /* line 80, ../sass/modules/_navs.scss */
+  /* line 84, ../sass/modules/_navs.scss */
   .nav--adaptive > li {
     float: none;
     display: block;
     min-width: 40%;
     margin: 0 1em;
   }
-  /* line 86, ../sass/modules/_navs.scss */
+  /* line 90, ../sass/modules/_navs.scss */
   .nav--adaptive > li > a {
     margin: 0;
     padding: 1em 1.5em;
@@ -1739,9 +1744,9 @@ blockquote:after {
     -ms-border-radius: 0;
     -o-border-radius: 0;
     border-radius: 0;
-    border-bottom: 1px solid rgba(168, 93, 96, 0.15);
+    border-bottom: 1px solid rgba(153, 0, 0, 0.15);
   }
-  /* line 95, ../sass/modules/_navs.scss */
+  /* line 99, ../sass/modules/_navs.scss */
   .nav--adaptive > .separate {
     float: none;
     margin: 1em;
@@ -1753,20 +1758,20 @@ blockquote:after {
     *display: inline;
     *vertical-align: auto;
   }
-  /* line 102, ../sass/modules/_navs.scss */
+  /* line 106, ../sass/modules/_navs.scss */
   .nav--adaptive > .current > a {
-    background: #d2bdb5;
+    background: #debebc;
     border-color: transparent;
   }
-  /* line 107, ../sass/modules/_navs.scss */
+  /* line 111, ../sass/modules/_navs.scss */
   .nav--adaptive > .active > a {
-    background: #d2bdb5;
+    background: #debebc;
     border-color: transparent;
   }
 }
 
 @media only screen and (max-width: 760px) {
-  /* line 115, ../sass/modules/_navs.scss */
+  /* line 119, ../sass/modules/_navs.scss */
   .nav--adaptive.open {
     display: block;
   }
@@ -1806,11 +1811,11 @@ blockquote:after {
   font-size: 0.8em;
   margin-left: 0.5em;
   margin-right: 1em;
-  color: #b29c96;
+  color: #e1d7d3;
 }
 /* line 15, ../sass/modules/_logo.scss */
 .logo:hover, .logo:focus, .logo:active {
-  color: #b29c96;
+  color: #e1d7d3;
   background: transparent;
   text-decoration: none;
 }
@@ -2073,7 +2078,7 @@ Post, Articles
   margin: 0;
   padding-top: 0.5em;
   padding-bottom: 1.5em;
-  background: #ddd6cb;
+  background: #f0eeeb;
   color: #372b1d;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
 }
@@ -2145,7 +2150,7 @@ a.thumbnail {
 }
 /* line 57, ../sass/modules/_thumbnails.scss */
 a.thumbnail:hover, a.thumbnail:focus, a.thumbnail:active {
-  border-color: #a85d60;
+  border-color: #990000;
 }
 
 /**
@@ -2169,7 +2174,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail:active {
 /* line 22, ../sass/modules/_zebra.scss */
 .zebra .zebra__item:nth-child(even),
 .zebra > li:nth-child(even) {
-  background: #e4d7c1;
+  background: #ddd6cb;
 }
 
 /************************************************************************************
@@ -2184,7 +2189,7 @@ html, body {
 }
 
 /* line 13, ../sass/modules/_page_blocks.scss */
-body {
+.site {
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -2194,16 +2199,17 @@ body {
 .main {
   /* flex: 1; would be enough but it looks bad in IE */
   flex: 1 0 auto;
+  background: #f0eeeb;
 }
 
-/* line 25, ../sass/modules/_page_blocks.scss */
+/* line 26, ../sass/modules/_page_blocks.scss */
 .content {
-  background: #ddd6cb;
+  background: #f0eeeb;
   color: #372b1d;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
 }
 
-/* line 32, ../sass/modules/_page_blocks.scss */
+/* line 33, ../sass/modules/_page_blocks.scss */
 .footer {
   margin: 0;
   padding: 1em;
