@@ -51,8 +51,8 @@ figcaption, .figcaption {
 
 
 .figure {
-    margin-top: $gap-large*2;
-    margin-bottom: $gap-huge;
+    margin-top: gap-large;
+    margin-bottom: gap-large;
     img {
         margin-top: 0;
         margin-bottom: 0;

@@ -1411,8 +1411,8 @@ figcaption, .figcaption, .figure p {
 
 /* line 53, ../sass/modules/_images.scss */
 .figure {
-  margin-top: 3em;
-  margin-bottom: 2em;
+  margin-top: gap-large;
+  margin-bottom: gap-large;
 }
 /* line 56, ../sass/modules/_images.scss */
 .figure img {
