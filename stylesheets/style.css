@@ -2183,8 +2183,8 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail:active {
     http://codepen.io/devatrox/pen/wztlx
     https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
 *************************************************************************************/
-/* line 9, ../sass/modules/_page_blocks.scss */
-html, body {
+/* line 8, ../sass/modules/_page_blocks.scss */
+html {
   height: 100%;
 }
 
