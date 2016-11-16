@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48a0af09-6a7b-43bc-b07a-d0dfec594eae" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/en/br8v1.html" afterPath="$PROJECT_DIR$/en/br8v1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/8ch_eeg.jpg" afterPath="$PROJECT_DIR$/assets/images/8ch_eeg.jpg" />
     </list>
     <ignored path="biorecorder.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -538,7 +538,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="20" y="23" width="1260" height="709" extended-state="1" />
+    <frame x="20" y="23" width="1260" height="709" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
