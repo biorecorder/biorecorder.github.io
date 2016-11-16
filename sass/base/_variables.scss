@@ -83,8 +83,8 @@ $border-radius-large:   24px;
 $base-font-family: $font-family-sans-serif-light-400;
 
 $base-intense-bg:  #ddd6cb;
-$base-bg: lighten(desaturate(#ddd6cb, 5), 10); // #f0eeeb;
-$base-strong: #111;
+$base-bg: lighten(desaturate(#ddd6cb, 5), 7); // #eae7e2;
+$base-strong: darken(#5F4B32, 12);
 $base-text: darken(#5F4B32, 12);
 
 

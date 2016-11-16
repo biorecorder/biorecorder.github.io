@@ -1032,7 +1032,7 @@ COLORS
 /* line 6, ../sass/modules/_colors.scss */
 .dark, .navbar {
   background: #1c171e;
-  color: #e1d7d3;
+  color: #dbd0ca;
   text-shadow: none;
 }
 
@@ -1070,7 +1070,7 @@ body {
   font-variant: normal;
   line-height: 1.667;
   background: #1c171e;
-  color: #e1d7d3;
+  color: #dbd0ca;
 }
 
 /**
@@ -1089,7 +1089,7 @@ a {
 }
 /* line 54, ../sass/modules/_!main.scss */
 a:hover, a:focus, a:active {
-  background: #c18481;
+  background: #bd7f7c;
   color: #000000;
   text-shadow: none;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
@@ -1309,16 +1309,16 @@ h3 {
   text-decoration: none;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
   color: #000000;
-  background: #c18481;
-  border-color: #c18481;
+  background: #bd7f7c;
+  border-color: #bd7f7c;
 }
 
 /* line 67, ../sass/modules/_buttons.scss */
 .button--filled {
-  background: #e1d7d3;
+  background: #dbd0ca;
   color: #000000;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
-  border: 2px solid #e1d7d3;
+  border: 2px solid #dbd0ca;
 }
 /* line 34, ../sass/modules/_buttons.scss */
 .button--filled:hover, .button--filled:focus, .button--filled:active {
@@ -1695,18 +1695,18 @@ blockquote:after {
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
   border-radius: 6px;
-  color: #e1d7d3;
+  color: #dbd0ca;
 }
 /* line 48, ../sass/modules/_navs.scss */
 .nav > li > a:hover, .nav > li > a:focus, .nav > li > a:active {
-  background: #c18481;
+  background: #bd7f7c;
   color: #000000;
   text-shadow: none;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
 }
 /* line 57, ../sass/modules/_navs.scss */
 .nav a.active {
-  background: #c18481;
+  background: #bd7f7c;
   color: #000000;
   text-shadow: none;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
@@ -1723,7 +1723,7 @@ blockquote:after {
   /* line 75, ../sass/modules/_navs.scss */
   .nav--adaptive {
     display: none;
-    background: #f0eeeb;
+    background: #eae7e2;
     margin: 0;
     margin-top: 50px;
     padding-top: 50px;
@@ -1760,12 +1760,12 @@ blockquote:after {
   }
   /* line 106, ../sass/modules/_navs.scss */
   .nav--adaptive > .current > a {
-    background: #debebc;
+    background: #d9b8b4;
     border-color: transparent;
   }
   /* line 111, ../sass/modules/_navs.scss */
   .nav--adaptive > .active > a {
-    background: #debebc;
+    background: #d9b8b4;
     border-color: transparent;
   }
 }
@@ -1789,9 +1789,9 @@ blockquote:after {
   margin-bottom: 0.25em;
   margin-left: 0.5em;
   margin-right: 0.5em;
-  box-shadow: 0 0 8px rgba(17, 17, 17, 0.4);
-  -webkit-box-shadow: 0 0 8px rgba(17, 17, 17, 0.4);
-  -moz-box-shadow: 0 0 8px rgba(17, 17, 17, 0.4);
+  box-shadow: 0 0 8px rgba(55, 43, 29, 0.4);
+  -webkit-box-shadow: 0 0 8px rgba(55, 43, 29, 0.4);
+  -moz-box-shadow: 0 0 8px rgba(55, 43, 29, 0.4);
 }
 
 /************************************************************************************
@@ -1811,11 +1811,11 @@ blockquote:after {
   font-size: 0.8em;
   margin-left: 0.5em;
   margin-right: 1em;
-  color: #e1d7d3;
+  color: #dbd0ca;
 }
 /* line 15, ../sass/modules/_logo.scss */
 .logo:hover, .logo:focus, .logo:active {
-  color: #e1d7d3;
+  color: #dbd0ca;
   background: transparent;
   text-decoration: none;
 }
@@ -1992,9 +1992,9 @@ Section
 .section {
   padding-bottom: 3em;
   margin-top: 1.5em;
-  box-shadow: 0 0 8px rgba(17, 17, 17, 0.6);
-  -webkit-box-shadow: 0 0 8px rgba(17, 17, 17, 0.6);
-  -moz-box-shadow: 0 0 8px rgba(17, 17, 17, 0.6);
+  box-shadow: 0 0 8px rgba(55, 43, 29, 0.6);
+  -webkit-box-shadow: 0 0 8px rgba(55, 43, 29, 0.6);
+  -moz-box-shadow: 0 0 8px rgba(55, 43, 29, 0.6);
   min-height: 80%;
   height: auto !important;
   height: 80%;
@@ -2078,7 +2078,7 @@ Post, Articles
   margin: 0;
   padding-top: 0.5em;
   padding-bottom: 1.5em;
-  background: #f0eeeb;
+  background: #eae7e2;
   color: #372b1d;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
 }
@@ -2199,12 +2199,12 @@ html {
 .main {
   /* flex: 1; would be enough but it looks bad in IE */
   flex: 1 0 auto;
-  background: #f0eeeb;
+  background: #eae7e2;
 }
 
 /* line 26, ../sass/modules/_page_blocks.scss */
 .content {
-  background: #f0eeeb;
+  background: #eae7e2;
   color: #372b1d;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
 }
