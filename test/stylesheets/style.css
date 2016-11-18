@@ -1029,7 +1029,7 @@ p {
 /************************************************************************************
 COLORS
 *************************************************************************************/
-/* line 81, ../sass/modules/_colors.scss */
+/* line 77, ../sass/modules/_colors_blue.scss */
 .dark-theme, html, body {
   background: #101624;
   background: #101624;
@@ -1041,9 +1041,9 @@ COLORS
   background: linear-gradient(#101624, #1c171e);
 }
 
-/* line 87, ../sass/modules/_colors.scss */
-.base-theme, .content {
-  background: #f1f1f1;
+/* line 83, ../sass/modules/_colors_blue.scss */
+.base-theme, .main, .content {
+  background: #eae7e2;
   color: #333;
   text-shadow: none;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
@@ -1124,7 +1124,7 @@ i, em, q {
 
 /* line 85, ../sass/modules/_!main.scss */
 hr {
-  width: 5em;
+  width: 16em;
   text-align: center;
   margin: 2em auto;
   border: none;
@@ -1269,7 +1269,7 @@ h3 {
 .lead:before {
   display: block;
   margin-bottom: 1em;
-  width: 10em;
+  width: 16em;
   height: 3px;
   background-color: #800;
   content: "​";
@@ -1552,7 +1552,7 @@ blockquote ul li {
 /* line 26, ../sass/modules/_blockquote.scss */
 blockquote hr {
   margin: 0.5em auto;
-  width: 10em;
+  width: 16em;
   height: 1px;
   background-color: #800;
   color: #800;
@@ -1561,7 +1561,7 @@ blockquote hr {
 blockquote:after {
   display: block;
   margin-top: 1em;
-  width: 10em;
+  width: 16em;
   height: 3px;
   background-color: #800;
   content: "\200B";
@@ -1657,13 +1657,13 @@ blockquote:after {
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
   border-radius: 6px;
-  color: #a0a5ae;
+  color: #bcbfc5;
 }
 /* line 49, ../sass/modules/_navs.scss */
 .nav > li > a:hover, .nav > li > a:focus, .nav > li > a:active {
   border-color: #800;
   background: #800;
-  color: #a0a5ae;
+  color: #bcbfc5;
   text-shadow: none;
   text-shadow: none;
 }
@@ -1683,7 +1683,7 @@ blockquote:after {
   /* line 72, ../sass/modules/_navs.scss */
   .nav--adaptive {
     display: none;
-    background: #f1f1f1;
+    background: #eae7e2;
     margin: 0;
     margin-top: 50px;
     padding-top: 50px;
@@ -1720,12 +1720,12 @@ blockquote:after {
   }
   /* line 103, ../sass/modules/_navs.scss */
   .nav--adaptive > .current > a {
-    background: #dccedf;
+    background: #d6c6d3;
     border-color: transparent;
   }
   /* line 108, ../sass/modules/_navs.scss */
   .nav--adaptive > .active > a {
-    background: #dccedf;
+    background: #d6c6d3;
     border-color: transparent;
   }
 }
@@ -1768,11 +1768,11 @@ blockquote:after {
   font-size: 0.8em;
   margin-left: 0.5em;
   margin-right: 1em;
-  color: #a0a5ae;
+  color: #bcbfc5;
 }
 /* line 15, ../sass/modules/_logo.scss */
 .logo:hover, .logo:focus, .logo:active {
-  color: #a0a5ae;
+  color: #bcbfc5;
   background: transparent;
   text-decoration: none;
 }
@@ -1981,15 +1981,15 @@ Post, Articles
 .main {
   /* flex: 1; would be enough but it looks bad in IE */
   flex: 1 0 auto;
-  background: #f1f1f1;
+  border-top: 3px solid #800;
 }
 
-/* line 21, ../sass/modules/_page_blocks.scss */
+/* line 22, ../sass/modules/_page_blocks.scss */
 .content {
   border-top: 3px solid #800;
 }
 
-/* line 28, ../sass/modules/_page_blocks.scss */
+/* line 29, ../sass/modules/_page_blocks.scss */
 .footer {
   margin: 0;
   padding: 1em;

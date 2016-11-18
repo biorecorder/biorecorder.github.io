@@ -6,12 +6,7 @@ $gray: #6b717d;
 
 $brand-color: #800;
 
-$link-color: #4470a0;
-$link-color: #883388;
-$link-color: #884490;
-$link-color: saturate(#884490, 5);
-
-$link-color: #884499;
+$link-color: #884499;  //$link-color: saturate(#884499, 5);
 $link-hover-color: #cc0000;
 
 // Lines and borders color
@@ -23,7 +18,7 @@ $border-color: $brand-color;
 // Nav colors
 // ----------------------
 
-$nav-color: lighten($gray, 20);
+$nav-color: lighten($gray, 30);
 $nav-hover-bg: $brand-color;
 $nav-hover-text: $nav-color;
 $nav-hover-text-shadow: none;
@@ -56,7 +51,8 @@ $submit-button-color: #ccc;
 // Base color theme
 // ----------------------
 
-$base-bg: #f1f1f1;
+//$base-bg: #f1f1f1;
+$base-bg: #eae7e2;
 $base-text: #333;
 
 
