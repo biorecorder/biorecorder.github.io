@@ -592,18 +592,18 @@ hgroup, menu, nav, section, summary, time, mark, audio, video {
  *   For clearing floats like a boss h5bp.com/q
  */
 /* line 9, ../sass/base/_mixins.scss */
-.clearfix, .navbar, .row, .post, .media {
+.clearfix, .navbar, .row, .post {
   *zoom: 1;
   overflow: hidden;
 }
 /* line 12, ../sass/base/_mixins.scss */
-.clearfix:before, .navbar:before, .row:before, .post:before, .media:before, .clearfix:after, .navbar:after, .row:after, .post:after, .media:after {
+.clearfix:before, .navbar:before, .row:before, .post:before, .clearfix:after, .navbar:after, .row:after, .post:after {
   display: table;
   content: " ";
   line-height: 0;
 }
 /* line 20, ../sass/base/_mixins.scss */
-.clearfix:after, .navbar:after, .row:after, .post:after, .media:after {
+.clearfix:after, .navbar:after, .row:after, .post:after {
   clear: both;
 }
 
@@ -686,7 +686,7 @@ p {
 .blocktext ul,
 .post ul,
 .blocktext ol,
-.post ol, .lead:before, img, figcaption, .figcaption, .figure p, blockquote, blockquote:after, .central-wide, .central-page, .central-text, .column-half, .column-third, .iframeWrapper {
+.post ol, .lead:before, img, figcaption, .figcaption, .figure p, blockquote, blockquote:after, .central-wide, .central-page, .central-text, .column-half, .column-third {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -1029,21 +1029,22 @@ p {
 /************************************************************************************
 COLORS
 *************************************************************************************/
-/* line 74, ../sass/modules/_colors.scss */
+/* line 77, ../sass/modules/_colors.scss */
 .dark-theme, html, body {
-  background: #1c171e;
+  background: #101624;
+  background: #101624;
   background: #1c171e;
   /* for non-css3 browsers */
-  background: -webkit-linear-gradient(#1c171e, #1c171e);
-  background: -moz-linear-gradient(#1c171e, #1c171e);
-  background: -o-linear-gradient(#1c171e, #1c171e);
-  background: linear-gradient(#1c171e, #1c171e);
+  background: -webkit-linear-gradient(#101624, #1c171e);
+  background: -moz-linear-gradient(#101624, #1c171e);
+  background: -o-linear-gradient(#101624, #1c171e);
+  background: linear-gradient(#101624, #1c171e);
 }
 
-/* line 79, ../sass/modules/_colors.scss */
+/* line 83, ../sass/modules/_colors.scss */
 .base-theme, .main, .content {
   background: #eae7e2;
-  color: #372b1d;
+  color: #333;
   text-shadow: none;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
 }
@@ -1085,7 +1086,7 @@ body {
 
 /* line 46, ../sass/modules/_!main.scss */
 a {
-  color: #990000;
+  color: #884499;
   text-decoration: none;
 }
 /* line 50, ../sass/modules/_!main.scss */
@@ -1127,9 +1128,9 @@ hr {
   text-align: center;
   margin: 2em auto;
   border: none;
-  height: 3px;
-  background-color: #990000;
-  color: #990000;
+  height: 2px;
+  background-color: #700;
+  color: #700;
 }
 
 /* line 101, ../sass/modules/_!main.scss */
@@ -1269,8 +1270,8 @@ h3 {
   display: block;
   margin-bottom: 1em;
   width: 16em;
-  height: 3px;
-  background-color: #990000;
+  height: 2px;
+  background-color: #700;
   content: "​";
 }
 
@@ -1298,8 +1299,8 @@ h3 {
 .button, #toTop {
   margin: 1em 0.5em;
   padding: 0.5em 1.5em;
-  color: #990000;
-  border: 2px solid #990000;
+  color: #700;
+  border: 2px solid #700;
   -moz-border-radius: 24px;
   -webkit-border-radius: 24px;
   -ms-border-radius: 24px;
@@ -1311,23 +1312,23 @@ h3 {
   text-decoration: none;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
   color: #000000;
-  background: #bd7f7c;
-  border-color: #bd7f7c;
+  background: #a0a5ae;
+  border-color: #a0a5ae;
 }
 
 /* line 68, ../sass/modules/_buttons.scss */
 .button--filled {
-  background: #990000;
+  background: #700;
   color: #000000;
   text-shadow: none;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
-  border: 2px solid #990000;
+  border: 2px solid #700;
 }
 /* line 35, ../sass/modules/_buttons.scss */
 .button--filled:hover, .button--filled:focus, .button--filled:active {
   text-decoration: none;
-  color: #990000;
-  border-color: #990000;
+  color: #884499;
+  border-color: #884499;
   background: none;
   text-shadow: none;
 }
@@ -1553,16 +1554,16 @@ blockquote hr {
   margin: 0.5em auto;
   width: 16em;
   height: 1px;
-  background-color: #990000;
-  color: #990000;
+  background-color: #700;
+  color: #700;
 }
 /* line 34, ../sass/modules/_blockquote.scss */
 blockquote:after {
   display: block;
   margin-top: 1em;
   width: 16em;
-  height: 3px;
-  background-color: #990000;
+  height: 2px;
+  background-color: #700;
   content: "\200B";
 }
 
@@ -1656,19 +1657,19 @@ blockquote:after {
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
   border-radius: 6px;
-  color: #dbd0ca;
+  color: #bcbfc5;
 }
 /* line 49, ../sass/modules/_navs.scss */
 .nav > li > a:hover, .nav > li > a:focus, .nav > li > a:active {
-  border-color: #990000;
-  background: #990000;
-  color: #dbd0ca;
+  border-color: #700;
+  background: #700;
+  color: #bcbfc5;
   text-shadow: none;
   text-shadow: none;
 }
 /* line 59, ../sass/modules/_navs.scss */
 .nav a.active {
-  border-color: #990000;
+  border-color: #700;
 }
 @media only screen and (max-width: 760px) {
   /* line 20, ../sass/modules/_navs.scss */
@@ -1703,7 +1704,7 @@ blockquote:after {
     -ms-border-radius: 0;
     -o-border-radius: 0;
     border-radius: 0;
-    border-bottom: 1px solid rgba(153, 0, 0, 0.15);
+    border-bottom: 1px solid rgba(136, 68, 153, 0.15);
   }
   /* line 96, ../sass/modules/_navs.scss */
   .nav--adaptive > .separate {
@@ -1719,12 +1720,12 @@ blockquote:after {
   }
   /* line 103, ../sass/modules/_navs.scss */
   .nav--adaptive > .current > a {
-    background: #d9b8b4;
+    background: #d6c6d3;
     border-color: transparent;
   }
   /* line 108, ../sass/modules/_navs.scss */
   .nav--adaptive > .active > a {
-    background: #d9b8b4;
+    background: #d6c6d3;
     border-color: transparent;
   }
 }
@@ -1767,11 +1768,11 @@ blockquote:after {
   font-size: 0.8em;
   margin-left: 0.5em;
   margin-right: 1em;
-  color: #dbd0ca;
+  color: #bcbfc5;
 }
 /* line 15, ../sass/modules/_logo.scss */
 .logo:hover, .logo:focus, .logo:active {
-  color: #dbd0ca;
+  color: #bcbfc5;
   background: transparent;
   text-decoration: none;
 }
@@ -1980,12 +1981,12 @@ Post, Articles
 .main {
   /* flex: 1; would be enough but it looks bad in IE */
   flex: 1 0 auto;
-  border-top: 3px solid #990000;
+  border-top: 3px solid #700;
 }
 
 /* line 22, ../sass/modules/_page_blocks.scss */
 .content {
-  border-top: 3px solid #990000;
+  border-top: 3px solid #700;
 }
 
 /* line 29, ../sass/modules/_page_blocks.scss */
@@ -1993,107 +1994,4 @@ Post, Articles
   margin: 0;
   padding: 1em;
   padding-top: 0;
-}
-
-/************************************************************************************
-ADAPTIVE IFRAME (VIDEO, MAPS...)
-*************************************************************************************/
-/* line 6, ../sass/modules/_iframe.scss */
-iframe, object, embed {
-  max-width: 100%;
-}
-
-/* line 16, ../sass/modules/_iframe.scss */
-.iframeContainer {
-  position: relative;
-  padding-bottom: 62%;
-  height: 0;
-  overflow: hidden;
-  margin-top: 1em;
-}
-
-/* line 26, ../sass/modules/_iframe.scss */
-.iframeContainer iframe,
-.iframeContainer object,
-.iframeContainer embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-/* line 41, ../sass/modules/_iframe.scss */
-.iframeContainer--gmap {
-  padding-bottom: 100%;
-}
-
-/* line 45, ../sass/modules/_iframe.scss */
-.iframeWrapper {
-  margin-top: 2em;
-  margin-bottom: 2em;
-  max-width: 470.4px;
-  max-width: 29.4rem;
-}
-
-/************************************************************************************
-MEDIA
-*************************************************************************************/
-/**
-* Place an media__object (img, video, audio) and corresponding textual content - media__body (.blocktext) side-by-side.
-* Used for thumbnails, blog comments, Tweets and any page blocks with img and corresponding text
-**/
-/**
-* Original non-responsive version like in Bootstrap
-* Source: http://stubbornella.org/content/?p=497
-**/
-/* line 15, ../sass/modules/_media.scss */
-.media {
-  text-align: right;
-}
-/* line 18, ../sass/modules/_media.scss */
-.media > .media__object {
-  display: inline-block;
-  vertical-align: top;
-  /* IE hacks */
-  zoom: 1;
-  *display: inline;
-  *vertical-align: auto;
-  width: 30%;
-  vertical-align: bottom;
-}
-/* line 23, ../sass/modules/_media.scss */
-.media > .media__object > img {
-  margin: 0;
-  margin-left: auto;
-}
-/* line 29, ../sass/modules/_media.scss */
-.media > .media__body {
-  display: inline-block;
-  vertical-align: top;
-  /* IE hacks */
-  zoom: 1;
-  *display: inline;
-  *vertical-align: auto;
-  width: 70%;
-  padding-top: 0.5em;
-  vertical-align: bottom;
-  padding-bottom: 0.5em;
-}
-@media only screen and (max-width: 760px) {
-  /* line 40, ../sass/modules/_media.scss */
-  .media > .media__object {
-    width: 100%;
-    max-width: 100%;
-  }
-  /* line 43, ../sass/modules/_media.scss */
-  .media > .media__object > img {
-    width: 40%;
-  }
-  /* line 48, ../sass/modules/_media.scss */
-  .media > .media__body {
-    width: 100%;
-    max-width: 100%;
-    padding-bottom: 0;
-  }
 }
