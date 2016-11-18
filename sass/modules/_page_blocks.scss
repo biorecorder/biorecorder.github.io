@@ -5,11 +5,6 @@
     https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
 *************************************************************************************/
 
-html {
-  height: 100%;
-}
-
-
 .site {
   min-height: 100%;
   display: flex;
@@ -19,21 +14,21 @@ html {
 .main {
   /* flex: 1; would be enough but it looks bad in IE */
   flex: 1 0 auto;
-  background: $base-bg;
+  @extend .base-theme;
+  border-top: 3px solid $brand-color;
 }
 
 
 .content {
-    background: $base-bg;
-    color: $base-text;
-    text-shadow: 0 1px 1px rgba(white, 0.4);
+   @extend .base-theme;
+   border-top: 3px solid $brand-color;
 }
+
 
 
 .footer {
     margin: 0;
     padding: $gap-base;
     padding-top: 0;
-    text-shadow: none;
 }
 

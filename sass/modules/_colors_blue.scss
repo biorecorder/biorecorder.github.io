@@ -2,11 +2,17 @@
 COLORS
 *************************************************************************************/
 
+$gray: #6b717d;
 
-$brand-color: #990000;
-$link-color: $brand-color;
+$brand-color: #800;
+
+$link-color: #4470a0;
+$link-color: #883388;
+$link-color: #884490;
+$link-color: saturate(#884490, 5);
+
+$link-color: #884499;
 $link-hover-color: #cc0000;
-
 
 // Lines and borders color
 // ----------------------
@@ -17,7 +23,7 @@ $border-color: $brand-color;
 // Nav colors
 // ----------------------
 
-$nav-color: #dbd0ca;
+$nav-color: lighten($gray, 20);
 $nav-hover-bg: $brand-color;
 $nav-hover-text: $nav-color;
 $nav-hover-text-shadow: none;
@@ -32,7 +38,7 @@ $nav-hover-text-shadow: none;
 
 $button-text: #000000;
 $button-color: $brand-color;
-$button-fill-color: #bd7f7c;
+$button-fill-color: lighten($gray, 20);
 
 
 // Blockquotes
@@ -50,16 +56,17 @@ $submit-button-color: #ccc;
 // Base color theme
 // ----------------------
 
-$base-bg: #eae7e2;
-$base-text: #372b1d;
-
+$base-bg: #f1f1f1;
+$base-text: #333;
 
 
 // Dark color theme
 // ----------------------
 
-$dark-bg1: #1c171e;
-$dark-bg2: $dark-bg1;
+$dark-bg1: #101624; //blue
+$dark-bg2: #1c171e;
+
+
 
 
 @mixin gradient($from, $to) {
@@ -72,6 +79,7 @@ $dark-bg2: $dark-bg1;
 
 
 .dark-theme {
+    background: $dark-bg1;
     background: $dark-bg1;
     @include gradient($dark-bg1, $dark-bg2);
 }

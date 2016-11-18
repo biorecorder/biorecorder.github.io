@@ -25,6 +25,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    margin-top:$gap-base;
     @include rem-fallback(margin-right, $gap-base-rem);
     @include rem-fallback(margin-left, $gap-base-rem);
     @include font-size($nav-font-size);
@@ -38,29 +39,25 @@
         > a {
             display: block;
             padding: $gap-small;
-            padding-top: $gap-huge;
-            padding-bottom: 0;
+           // padding-top: $gap-huge;
+           // padding-bottom: 0;
             text-decoration: none;
-            border-bottom: 1px solid transparent;
+            border: 2px solid transparent;
             @include border-radius($border-radius);
-            color: $brand-color;
+            color: $nav-color;
 
             &:hover, &:focus, &:active {
-               background: $button-fill-color;
-               color: $button-text;
+               border-color: $nav-hover-bg;
+               background: $nav-hover-bg;
+               color: $nav-hover-text;
                text-shadow: none;
-               text-shadow: 0 1px 1px rgba(white, 0.4);
+               text-shadow: $nav-hover-text-shadow;
             }
         }
     }
 
     a.active {
-       // border-color: $brand-color;
-       background: $button-fill-color;
-       color: $button-text;
-       text-shadow: none;
-       text-shadow: 0 1px 1px rgba(white, 0.4);
-
+        border-color: $nav-hover-bg;
     }
 
     @include breakpoint(small) {

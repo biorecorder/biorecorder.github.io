@@ -10,10 +10,10 @@
     font-size: $nav-font-size*1em;
     margin-left: $gap-small;
     margin-right: $gap-base;
-    color: $brand-color;
+    color: $nav-color;
 
     &:hover, &:focus, &:active {
-        color: $brand-color;
+        color: $nav-color;
         background: transparent;
         text-decoration: none;
     }

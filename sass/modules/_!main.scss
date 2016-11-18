@@ -10,14 +10,13 @@
 
 
 html {
+    height: 100%;
     overflow-y: scroll;
     /* Stops Mobile Safari from auto-adjusting font-sizes */
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     /* improves the text rendering in more recent browsers */
     text-rendering: optimizeLegibility;
-
-    background: $dark-bg;
 
     @include breakpoint(big) {
         font-size: $base-font-size-screen-big*1em;
@@ -28,15 +27,31 @@ html {
     }
 }
 
+
+
 body {
     font-size: $base-font-size*1em;
     font-style: normal;
     font-variant: normal;
     line-height: $base-line-height;
-    background: $dark-bg;
-    color: $dark-text;
 }
 
+html, body {
+   @extend .dark-theme;
+}
+
+
+
+
+a {
+     color: $link-color;
+     text-decoration: none;
+
+     &:hover, &:focus, &:active {
+         color: $link-hover-color;
+         text-decoration: underline;
+     }
+ }
 
 /**
 *  Give Clickable Elements a Pointer Cursor
@@ -47,23 +62,7 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
     cursor: pointer;
 }
 
-a {
-     color: $link-color;
-     text-decoration: none;
 
-     &:hover, &:focus, &:active {
-         background: $button-fill-color;
-         color: $button-text;
-                        text-shadow: none;
-                        text-shadow: 0 1px 1px rgba(white, 0.4);
-         // text-decoration: underline;
-     }
- }
-
-::-moz-selection, ::selection {
-    background: $link-color;
-    color: white;
-}
 
 /**
  *  wherever possible is applied the principle of "Single-direction margin declarations"
@@ -89,8 +88,8 @@ hr {
      margin: $gap-huge  auto;
      border: none;
      height: $blockquote-border-width;
-     background-color: $link-color;
-     color: $link-color;
+     background-color: $border-color;
+     color: $border-color;
 
      &:before {
          //content: "\2a\2a\2a\2a\2a\2a\2a\2a\2a";
@@ -105,7 +104,6 @@ cite {
     margin-top: $gap-small;
     text-align: center;
     font-style: italic;
-  //  @extend %caption-color;
 
     &:before {
          content: "\2014 \2009";

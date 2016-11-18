@@ -78,57 +78,12 @@ $border-radius: 6px;
 $border-radius-large:   24px;
 
 
-// Base color theme
-// ----------------------
-$base-font-family: $font-family-sans-serif-light-400;
-
-$base-intense-bg:  #ddd6cb;
-$base-bg: lighten(desaturate(#ddd6cb, 5), 7); // #eae7e2;
-$base-strong: darken(#5F4B32, 12);
-$base-text: darken(#5F4B32, 12);
-
-
-// Brand staff
-// -------------------------
-$brand-font-size: 1.3;
-
-$link-color: #990000;
-$brand-color: mix($base-bg, #660000,95);
-$link-hover-color: darken(mix($brand-color, $link-color, 60), 15);
-$link-hover-color: desaturate($link-hover-color, 5);
-
-$brand-color: darken(mix($base-bg, #660000,95), 4);
-$link-hover-color: darken(mix($brand-color, $link-color, 60), 5);
-$link-hover-color: desaturate($link-hover-color, 5);
-
-$link-hover-color: mix($brand-color, $link-color, 60);
-$link-hover-color: desaturate($link-hover-color, 3);
-
-
-// Dark color theme
-// ----------------------
-
-$dark-bg: mix(#18181c, #201720);
-$dark-text: $brand-color;
-
-
-// Buttons color
-// ----------------------
-
-$button-text: #000000;
-$button-color: $link-color;
-$button-fill-color: $link-hover-color;
-
-// footer
-// ----------------------
-
-$footer-bg: darken(desaturate($brand-color, 8),30);
-//$footer-bg: darken(desaturate($brand-color, 8),25);
-
-
-
 // Typography
 // -------------------------
+
+$brand-font-size: 1.3;
+
+$base-font-family: $font-family-sans-serif-light-400;
 
 $base-line-height: 1.667;
 $base-font-size: 1.1;
@@ -153,12 +108,9 @@ $font-size-h2: 1.3;
 $font-size-h3: 1.2;
 
 
-
-
 // Lead text
 // -------------------------
 $lead-font-size: 1.24;
-
 
 
 // Navigation
@@ -185,26 +137,7 @@ $blocktext-title-size: 1.3;
 
 $blockquote-border-length: 10em;
 $blockquote-border-width: 3px;
-$blockquote-border-color: $link-color;
 $blockquote-border-length: 10em;
-
-
-
-
-// Alerts
-// -------------------------
-
-$alert-info-text:                #00529B;
-$alert-info-bg:                  #BDE5F8;
-
-$alert-success-text:             #4F8A10;
-$alert-success-bg:               #DFF2BF;
-
-$alert-error-text:             #D8000C;
-$alert-error-bg:               #FFBABA;
-
-$alert-warning-text:             #9F6000;
-$alert-warning-bg:               #FEEFB3;
 
 
 
@@ -213,5 +146,4 @@ $alert-warning-bg:               #FEEFB3;
 
 $submit-button-width: 8;
 $submit-button-height: 2.5;
-$submit-button-color: #ccc;
 
