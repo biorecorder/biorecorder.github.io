@@ -83,7 +83,7 @@ i, em,  q {
 
 
 hr {
-     width: 5em;
+     width: $blockquote-border-length;
      text-align:center;
      margin: $gap-huge  auto;
      border: none;

@@ -1123,7 +1123,7 @@ i, em, q {
 
 /* line 85, ../sass/modules/_!main.scss */
 hr {
-  width: 5em;
+  width: 16em;
   text-align: center;
   margin: 2em auto;
   border: none;
@@ -1268,7 +1268,7 @@ h3 {
 .lead:before {
   display: block;
   margin-bottom: 1em;
-  width: 10em;
+  width: 16em;
   height: 3px;
   background-color: #990000;
   content: "​";
@@ -1551,7 +1551,7 @@ blockquote ul li {
 /* line 26, ../sass/modules/_blockquote.scss */
 blockquote hr {
   margin: 0.5em auto;
-  width: 10em;
+  width: 16em;
   height: 1px;
   background-color: #990000;
   color: #990000;
@@ -1560,7 +1560,7 @@ blockquote hr {
 blockquote:after {
   display: block;
   margin-top: 1em;
-  width: 10em;
+  width: 16em;
   height: 3px;
   background-color: #990000;
   content: "\200B";
