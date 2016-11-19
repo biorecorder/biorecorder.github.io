@@ -1029,19 +1029,12 @@ p {
 /************************************************************************************
 COLORS
 *************************************************************************************/
-/* line 77, ../sass/modules/_colors.scss */
+/* line 78, ../sass/modules/_colors.scss */
 .dark-theme, html, body {
-  background: #101624;
-  background: #101624;
-  background: #1c171e;
-  /* for non-css3 browsers */
-  background: -webkit-linear-gradient(#101624, #1c171e);
-  background: -moz-linear-gradient(#101624, #1c171e);
-  background: -o-linear-gradient(#101624, #1c171e);
-  background: linear-gradient(#101624, #1c171e);
+  background: #200624;
 }
 
-/* line 83, ../sass/modules/_colors.scss */
+/* line 82, ../sass/modules/_colors.scss */
 .base-theme, .main, .content {
   background: #eae7e2;
   color: #333;
@@ -1086,12 +1079,12 @@ body {
 
 /* line 46, ../sass/modules/_!main.scss */
 a {
-  color: #884499;
+  color: #808;
   text-decoration: none;
 }
 /* line 50, ../sass/modules/_!main.scss */
 a:hover, a:focus, a:active {
-  color: #cc0000;
+  color: #99004d;
   text-decoration: underline;
 }
 
@@ -1129,8 +1122,8 @@ hr {
   margin: 2em auto;
   border: none;
   height: 2px;
-  background-color: #700;
-  color: #700;
+  background-color: #603;
+  color: #603;
 }
 
 /* line 101, ../sass/modules/_!main.scss */
@@ -1271,7 +1264,7 @@ h3 {
   margin-bottom: 1em;
   width: 16em;
   height: 2px;
-  background-color: #700;
+  background-color: #603;
   content: "​";
 }
 
@@ -1299,8 +1292,8 @@ h3 {
 .button, #toTop {
   margin: 1em 0.5em;
   padding: 0.5em 1.5em;
-  color: #700;
-  border: 2px solid #700;
+  color: #603;
+  border: 2px solid #603;
   -moz-border-radius: 24px;
   -webkit-border-radius: 24px;
   -ms-border-radius: 24px;
@@ -1318,17 +1311,17 @@ h3 {
 
 /* line 68, ../sass/modules/_buttons.scss */
 .button--filled {
-  background: #700;
+  background: #603;
   color: #000000;
   text-shadow: none;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
-  border: 2px solid #700;
+  border: 2px solid #603;
 }
 /* line 35, ../sass/modules/_buttons.scss */
 .button--filled:hover, .button--filled:focus, .button--filled:active {
   text-decoration: none;
-  color: #884499;
-  border-color: #884499;
+  color: #808;
+  border-color: #808;
   background: none;
   text-shadow: none;
 }
@@ -1554,8 +1547,8 @@ blockquote hr {
   margin: 0.5em auto;
   width: 16em;
   height: 1px;
-  background-color: #700;
-  color: #700;
+  background-color: #603;
+  color: #603;
 }
 /* line 34, ../sass/modules/_blockquote.scss */
 blockquote:after {
@@ -1563,7 +1556,7 @@ blockquote:after {
   margin-top: 1em;
   width: 16em;
   height: 2px;
-  background-color: #700;
+  background-color: #603;
   content: "\200B";
 }
 
@@ -1661,15 +1654,15 @@ blockquote:after {
 }
 /* line 49, ../sass/modules/_navs.scss */
 .nav > li > a:hover, .nav > li > a:focus, .nav > li > a:active {
-  border-color: #700;
-  background: #700;
+  border-color: #603;
+  background: #603;
   color: #bcbfc5;
   text-shadow: none;
   text-shadow: none;
 }
 /* line 59, ../sass/modules/_navs.scss */
 .nav a.active {
-  border-color: #700;
+  border-color: #603;
 }
 @media only screen and (max-width: 760px) {
   /* line 20, ../sass/modules/_navs.scss */
@@ -1704,7 +1697,7 @@ blockquote:after {
     -ms-border-radius: 0;
     -o-border-radius: 0;
     border-radius: 0;
-    border-bottom: 1px solid rgba(136, 68, 153, 0.15);
+    border-bottom: 1px solid rgba(136, 0, 136, 0.15);
   }
   /* line 96, ../sass/modules/_navs.scss */
   .nav--adaptive > .separate {
@@ -1720,12 +1713,12 @@ blockquote:after {
   }
   /* line 103, ../sass/modules/_navs.scss */
   .nav--adaptive > .current > a {
-    background: #d6c6d3;
+    background: #d6b8d0;
     border-color: transparent;
   }
   /* line 108, ../sass/modules/_navs.scss */
   .nav--adaptive > .active > a {
-    background: #d6c6d3;
+    background: #d6b8d0;
     border-color: transparent;
   }
 }
@@ -1981,12 +1974,12 @@ Post, Articles
 .main {
   /* flex: 1; would be enough but it looks bad in IE */
   flex: 1 0 auto;
-  border-top: 3px solid #700;
+  border-top: 3px solid #603;
 }
 
 /* line 22, ../sass/modules/_page_blocks.scss */
 .content {
-  border-top: 3px solid #700;
+  border-top: 3px solid #603;
 }
 
 /* line 29, ../sass/modules/_page_blocks.scss */

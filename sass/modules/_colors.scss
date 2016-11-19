@@ -4,10 +4,14 @@ COLORS
 
 $gray: #6b717d;
 
-$brand-color: #700;
 
-$link-color: #884499;
-$link-hover-color: #cc0000;
+$brand-color: #603;
+
+//$link-color: #884499;
+$link-color: #808;
+$link-hover-color: lighten($brand-color, 10);
+
+
 
 // Lines and borders color
 // ----------------------
@@ -52,17 +56,14 @@ $submit-button-color: #ccc;
 // ----------------------
 
 $mixdreams-base-color: #FBF0D9;
-//$base-bg: #f1f1f1;
 $base-bg: #eae7e2;
 $base-text: #333;
 
 // Dark color theme
 // ----------------------
 
-$dark-bg1: #101624; //blue
-$dark-bg2: #1c171e;
-
-
+$dark-bg: #200024;
+$dark-bg: #200624;
 
 
 @mixin gradient($from, $to) {
@@ -75,9 +76,7 @@ $dark-bg2: #1c171e;
 
 
 .dark-theme {
-    background: $dark-bg1;
-    background: $dark-bg1;
-    @include gradient($dark-bg1, $dark-bg2);
+    background: $dark-bg;
 }
 
 .base-theme {
