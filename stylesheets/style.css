@@ -686,7 +686,7 @@ p {
 .blocktext ul,
 .post ul,
 .blocktext ol,
-.post ol, .lead:before, img, figcaption, .figcaption, .figure p, blockquote, blockquote:after, .central-wide, .central-page, .central-text, .column-half, .column-third {
+.post ol, img, figcaption, .figcaption, .figure p, blockquote, blockquote:after, .central-wide, .central-page, .central-text, .column-half, .column-third {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -1029,12 +1029,12 @@ p {
 /************************************************************************************
 COLORS
 *************************************************************************************/
-/* line 78, ../sass/modules/_colors.scss */
+/* line 73, ../sass/modules/_colors.scss */
 .dark-theme, html, body {
   background: #200624;
 }
 
-/* line 82, ../sass/modules/_colors.scss */
+/* line 77, ../sass/modules/_colors.scss */
 .base-theme, .main, .content {
   background: #eae7e2;
   color: #333;
@@ -1079,12 +1079,12 @@ body {
 
 /* line 46, ../sass/modules/_!main.scss */
 a {
-  color: #808;
+  color: #99004d;
   text-decoration: none;
 }
 /* line 50, ../sass/modules/_!main.scss */
 a:hover, a:focus, a:active {
-  color: #99004d;
+  color: #808;
   text-decoration: underline;
 }
 
@@ -1116,17 +1116,6 @@ i, em, q {
 }
 
 /* line 85, ../sass/modules/_!main.scss */
-hr {
-  width: 16em;
-  text-align: center;
-  margin: 2em auto;
-  border: none;
-  height: 2px;
-  background-color: #603;
-  color: #603;
-}
-
-/* line 101, ../sass/modules/_!main.scss */
 cite {
   font-size: 13.6px;
   font-size: 0.85rem;
@@ -1135,12 +1124,12 @@ cite {
   text-align: center;
   font-style: italic;
 }
-/* line 108, ../sass/modules/_!main.scss */
+/* line 92, ../sass/modules/_!main.scss */
 cite:before {
   content: "\2014 \2009";
 }
 
-/* line 113, ../sass/modules/_!main.scss */
+/* line 97, ../sass/modules/_!main.scss */
 .cite--big {
   font-size: 16px;
   font-size: 1rem;
@@ -1236,38 +1225,6 @@ h3 {
   margin-left: 1.5rem;
 }
 
-/**
-  * This class is used to make the introductory text (usually a paragraph)
-  * of a document larger.
-  */
-/* line 81, ../sass/modules/_headings.scss */
-.lead {
-  font-size: 19.84px;
-  font-size: 1.24rem;
-  text-align: center;
-  margin-top: 2em;
-  margin-right: 24px;
-  margin-right: 1.5rem;
-  margin-left: 24px;
-  margin-left: 1.5rem;
-  max-width: 873.6px;
-  max-width: 54.6rem;
-}
-/* line 89, ../sass/modules/_headings.scss */
-.lead .button, .lead #toTop {
-  font-size: 16px;
-  font-size: 1rem;
-}
-/* line 93, ../sass/modules/_headings.scss */
-.lead:before {
-  display: block;
-  margin-bottom: 1em;
-  width: 16em;
-  height: 2px;
-  background-color: #603;
-  content: "​";
-}
-
 /************************************************************************************
  BUTTONS
 *************************************************************************************/
@@ -1292,8 +1249,8 @@ h3 {
 .button, #toTop {
   margin: 1em 0.5em;
   padding: 0.5em 1.5em;
-  color: #603;
-  border: 2px solid #603;
+  color: #99004d;
+  border: 2px solid #99004d;
   -moz-border-radius: 24px;
   -webkit-border-radius: 24px;
   -ms-border-radius: 24px;
@@ -1311,17 +1268,17 @@ h3 {
 
 /* line 68, ../sass/modules/_buttons.scss */
 .button--filled {
-  background: #603;
+  background: #99004d;
   color: #000000;
   text-shadow: none;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
-  border: 2px solid #603;
+  border: 2px solid #99004d;
 }
 /* line 35, ../sass/modules/_buttons.scss */
 .button--filled:hover, .button--filled:focus, .button--filled:active {
   text-decoration: none;
-  color: #808;
-  border-color: #808;
+  color: #99004d;
+  border-color: #99004d;
   background: none;
   text-shadow: none;
 }
@@ -1543,20 +1500,13 @@ blockquote ul li {
   padding: 0;
 }
 /* line 26, ../sass/modules/_blockquote.scss */
-blockquote hr {
-  margin: 0.5em auto;
-  width: 16em;
-  height: 1px;
-  background-color: #603;
-  color: #603;
-}
-/* line 34, ../sass/modules/_blockquote.scss */
 blockquote:after {
   display: block;
   margin-top: 1em;
   width: 16em;
   height: 2px;
-  background-color: #603;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid #fff;
   content: "\200B";
 }
 
@@ -1654,15 +1604,15 @@ blockquote:after {
 }
 /* line 49, ../sass/modules/_navs.scss */
 .nav > li > a:hover, .nav > li > a:focus, .nav > li > a:active {
-  border-color: #603;
-  background: #603;
+  border-color: #99004d;
+  background: #99004d;
   color: #bcbfc5;
   text-shadow: none;
   text-shadow: none;
 }
 /* line 59, ../sass/modules/_navs.scss */
 .nav a.active {
-  border-color: #603;
+  border-color: #99004d;
 }
 @media only screen and (max-width: 760px) {
   /* line 20, ../sass/modules/_navs.scss */
@@ -1697,7 +1647,7 @@ blockquote:after {
     -ms-border-radius: 0;
     -o-border-radius: 0;
     border-radius: 0;
-    border-bottom: 1px solid rgba(136, 0, 136, 0.15);
+    border-bottom: 1px solid rgba(153, 0, 77, 0.15);
   }
   /* line 96, ../sass/modules/_navs.scss */
   .nav--adaptive > .separate {
@@ -1713,12 +1663,12 @@ blockquote:after {
   }
   /* line 103, ../sass/modules/_navs.scss */
   .nav--adaptive > .current > a {
-    background: #d6b8d0;
+    background: #d9b8c4;
     border-color: transparent;
   }
   /* line 108, ../sass/modules/_navs.scss */
   .nav--adaptive > .active > a {
-    background: #d6b8d0;
+    background: #d9b8c4;
     border-color: transparent;
   }
 }
@@ -1974,12 +1924,12 @@ Post, Articles
 .main {
   /* flex: 1; would be enough but it looks bad in IE */
   flex: 1 0 auto;
-  border-top: 3px solid #603;
+  border-top: 3px solid #99004d;
 }
 
 /* line 22, ../sass/modules/_page_blocks.scss */
 .content {
-  border-top: 3px solid #603;
+  border-top: 3px solid #99004d;
 }
 
 /* line 29, ../sass/modules/_page_blocks.scss */

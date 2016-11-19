@@ -73,33 +73,7 @@ h3 {
     @include rem-fallback(margin-left, $gap-base-rem);
 }
 
-/**
-  * This class is used to make the introductory text (usually a paragraph)
-  * of a document larger.
-  */
 
-.lead {
-    @include font-size($lead-font-size);
-    text-align: center;
-    margin-top: $gap-huge;
-    @include rem-fallback(margin-right, $gap-base-rem);
-    @include rem-fallback(margin-left, $gap-base-rem);
-    @include rem-fallback(max-width, $width-text*1.3);
-
-    .button {
-        @include font-size(1);
-    }
-
-    &:before {
-         @extend %pull-center;
-         display: block;
-         margin-bottom: $gap-base;
-         width: $blockquote-border-length;
-         height: $blockquote-border-width;
-         background-color: $blockquote-border-color;
-         content: "\200B"
-     }
-}
 
 
 

@@ -23,22 +23,16 @@ blockquote {
         }
     }
 
-    hr {
-        margin: $gap-small auto;
-        width: $blockquote-border-length;
-        height: 1px;
-        background-color: $blockquote-border-color;
-        color: $blockquote-border-color;
-    }
-
     &:after {
         @extend %pull-center;
         display: block;
         margin-top: $gap-base;
-        width: $blockquote-border-length;
-        height: $blockquote-border-width;
-        background-color: $blockquote-border-color;
+        width: 16em;
+        height: 2px;
+        background-color: rgba(#000, 0.2);
+        border-bottom: 1px solid #fff;
         content: "\200B";
+
     }
 }
 

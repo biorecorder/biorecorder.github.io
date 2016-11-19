@@ -5,11 +5,26 @@ COLORS
 $gray: #6b717d;
 
 
-$brand-color: #603;
+$brand-color: lighten(#603, 10);
 
 //$link-color: #884499;
-$link-color: #808;
-$link-hover-color: lighten($brand-color, 10);
+$link-color: $brand-color; // #808;
+$link-hover-color: #808;
+
+
+// Base color theme
+// ----------------------
+
+$mixdreams-base-color: #FBF0D9;
+$base-bg: #eae7e2;
+$base-text: #333;
+
+
+// Dark color theme
+// ----------------------
+
+$dark-bg: #200024;
+$dark-bg: #200624;
 
 
 
@@ -40,30 +55,10 @@ $button-color: $brand-color;
 $button-fill-color: lighten($gray, 20);
 
 
-// Blockquotes
-// -------------------------
-
-$blockquote-border-color: $brand-color;
-
-
 // Forms
 // -------------------------
 
 $submit-button-color: #ccc;
-
-
-// Base color theme
-// ----------------------
-
-$mixdreams-base-color: #FBF0D9;
-$base-bg: #eae7e2;
-$base-text: #333;
-
-// Dark color theme
-// ----------------------
-
-$dark-bg: #200024;
-$dark-bg: #200624;
 
 
 @mixin gradient($from, $to) {

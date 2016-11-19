@@ -82,22 +82,6 @@ i, em,  q {
 }
 
 
-hr {
-     width: $blockquote-border-length;
-     text-align:center;
-     margin: $gap-huge  auto;
-     border: none;
-     height: $blockquote-border-width;
-     background-color: $border-color;
-     color: $border-color;
-
-     &:before {
-         //content: "\2a\2a\2a\2a\2a\2a\2a\2a\2a";
-
-     }
- }
-
-
 cite {
     @include font-size($cite-font-size);
     display: block;
