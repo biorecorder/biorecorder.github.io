@@ -1,4 +1,3 @@
 com.biorecorder.edflib
+com.biorecorder.edflib.base
 com.biorecorder.edflib.filters
-com.biorecorder.edflib.util
-example
