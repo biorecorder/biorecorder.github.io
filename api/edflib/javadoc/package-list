@@ -1,2 +1,4 @@
 com.biorecorder.edflib
+com.biorecorder.edflib.exceptions
 com.biorecorder.edflib.filters
+example
