@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooted in Soil</title>
+ <style>
+ html {
+  overflow-x: clip; /* Permanently kills the bottom horizontal scrollbar */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-y: visible; /* CRUCIAL: Allows vertical scrolling when content is tall */
+}
+ /* THE GRID CONTROLLER */
+ .portal-header-grid {
+  /* margin-top:0 !important; padding-top:0 !important; */
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  display: grid;
+  grid-template-columns: 715px 1fr; /* image on left side and text on right */
+  justify-content: center;
+  background-color: #b8d3de; /* powder blue or light blue */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-bottom: 10px solid #8FA382; /* Creates a 10-pixel solid narrow sage green border */
+}
+.portal-text-zone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; 
+  text-align: left;
+  width: 100%;
+  padding-left: 55px;   /* Prevents sentences from running directly into the photo edge */
+  padding-right: 30px;  /* Prevents sentences from running directly into the photo edge */
+  height: 218px; 
+  box-sizing: border-box;
+  order: 2; /*Forces text to move to the second (right) position */
+}
+.portal-title {
+  color: #fffbf9;  /* snow or soapstone */
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  line-height: 1.1;
+}
+.portal-subtitle {
+  color: #1E1D3B;     /* very dark purplish blue */
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.4;
+}
+.portal-subtitle .page-subtitle {
+  font-size: 24px;
+  font-weight:500;
+  font-style:normal;
+}
+.portal-subtitle .description-smaller {
+  font-size: 22px;
+  font-weight:500;
+  font-style: italic;
+}
+/* Force Right Image Column to stay tight with no extra background colors leaking */
+.portal-image-zone {
+  width: 715px;
+  height: 218px;
+  overflow: hidden;
+  line-height: 0;
+  order: 1; /* Forces image to move to the first (left) position */
+}
+.portal-banner-img {
+  /* Keep the dimensions perfectly locked to match the 715px grid track */
+  width: 715px;       
+  height: 218px;      
+  display: block;
+  position: static; 
+  transform: none;
+}
+/* Navigation Bar spanning full width directly below the grid */
+.site-nav-bar {
+  grid-column: span 2; /* Forces navigation out of columns to span the entire bottom row */
+  grid-row: 1; /* locks navbar into the very first row slot, forcing text and header photo onto row 2 below it */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 45px;
+  background-color: #C99CA8;  /* muted dusty rose or thistle or cosmos */
+  /*opacity: .95; */
+  box-sizing: border-box;
+  height: 54px; /* Locks the nav bar height on desktop to keep rows perfectly synchronized */
+}
+/* Navigation Bar spanning full width directly below the grid */
+.page-nav-bar {
+/* Forces navigation out of columns to span the entire bottom row */
+  grid-column: span 2;       
+  grid-row:3; /* locks navbar into third row slot, forcing your text and header photo onto row 2 */
+  display: flex;
+  justify-content: center;   /* CHANGED from 'space-between' to center your items horizontally */
+  align-items: center;
+  padding: 14px 45px;
+  background-color:#dfa36e;  /* dusty orange */
+  box-sizing: border-box;
+}
+.nav-logo {
+  color:#fffbf9;  /* snow white, soapstone, alabaster, or eggshell */
+  font-size: 16px; /* 15px  font-size: 18px; */
+  font-style: italic;
+  font-weight: normal;
+  letter-spacing: 0.5px;  /* letter-spacing: 1px; */
+  opacity: 0.95;
+}
+.nav-menu, .page-nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-menu li, .page-nav-menu li  {
+  margin-right: 25px;
+}
+.nav-menu a {
+  color: #1E1D3B;  /* very dark purplish blue */
+  background-color: #C697A3; /* Muted dusty rose */
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  /* transition: color 0.2s ease; */
+  transition: all 0.3s ease;  /* Smooths out the color change */
+}
+.page-nav-menu a {
+  color: #1E1D3B;  /* very dark purplish blue */
+  background-color: #dfa36e;  /* dusty orange */
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  /* transition: color 0.2s ease; */
+  transition: all 0.3s ease;  /* Smooths out the color change */
+}
+.nav-menu a:hover, .page-nav-menu a:hover {
+  color:#1E1D3B;  /* very dark purplish blue */
+  background-color: #b8d3de;  /* ice blue on hover */
+}
+.nav-menu a.active {
+  font-weight: bold !important;
+  color: #fffbf9;  /* snow white, soapstone, alabaster, or eggshell */
+  text-decoration: underline dotted #fffbf9 1px !important; /* Adds underline to current page name */  
+  display: inline-block; /* Ensures the underline maps perfectly under the text */
+}
+/* Keeps on-page jump links perfectly flat and stable */
+.page-nav-menu a.active {
+  font-weight: normal !important; /* Prevents text from expanding vertically */
+  text-decoration: none !important; /* Removes layout-shifting underlines */
+  color: #1E1D3B !important; /* Keeps very dark purplish blue */
+  background-color: #dfa36e !important; /* Keeps dusty orange background */
+}
+
+/* Clean collapse structure for smaller tablet and mobile viewports */
+@media (max-width: 900px) { 
+  /* THE GRID: Stack everything vertically instead of side-by-side */
+    .portal-header-grid-off { 
+    grid-template-columns: 1fr; 
+    height: auto; /* Let header grow vertically to fit the stacked content */
+    border-bottom: 3px solid #8FA382; /* sage camouflage green border wraps entire bottom of the mobile stack cleanly */ 
+  } 
+/* Tells main grid container to treat its children like a vertical stack */
+  .portal-header-grid {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+.site-nav-bar{
+  order: 1 !important;     /* Keeps current layout position */
+  display: flex;           /* CRUCIAL: Enables the flex rules below to work */
+  flex-direction: column;  /* Stack logo and menu vertically on small screens */
+  height: auto;            /* CRUCIAL: Forces container to grow when content wraps */
+  gap: 10px; 
+  padding: 12px 15px;
+ }
+.page-nav-bar {
+	order: 4 !important; /* &lt; --- Forces to the very bottom */
+    grid-column: span 1; 
+    flex-direction: column; 
+    gap: 10px; 
+    padding: 12px 15px; 
+ }
+.nav-logo { 
+  font-size:12px;
+  text-align: center;
+  height: auto;
+}
+.portal-subtitle{
+  font-size: 18px;
+  line-height: 1.15!important;  /* Pulls 18px lines closer together */
+  margin: 0 0 4px 0 !important;
+}
+.portal-subtitle .page-subtitle {
+  font-size: 16px;
+  line-height: 1.2!important;   /* Keeps 16px text readable but highly compact */
+  margin: 0 !important;
+}
+.portal-subtitle .description-smaller {
+  font-size: 14px;
+  font-weight:500;
+  line-height: 1.1!important;
+/*font-style:normal;*/
+}
+.nav-menu li, .page-nav-menu li {
+  display: inline-block !important;
+  line-height: 1.1 !important;
+  margin: 0 6px; 
+} 
+.nav-menu a { 
+    font-size: 13px; 
+/*    white-space: nowrap;   TESTING  */
+  }
+.page-nav-menu a { 
+    font-size: 13px; 
+    white-space: nowrap; 
+} 
+  /* TEXT ZONE: Tamp down the padding and typography scale */
+.portal-text-zone {
+    order: 3 !important;
+    width: 100%; 
+    height: auto;
+    padding: 12px 20px; /* Slightly more vertical breathing room on mobile */
+    /* padding: 25px 20px; Snug padding around the text block */
+    box-sizing: border-box;
+    /* title and quote center-align on mobile screens */
+    align-items: center;
+    text-align: center;
+  } 
+  /* TYPOGRAPHY: Scale down font sizes so they aren't bloated on mobile */
+  .portal-text-zone > * {       /* WAS &gt; */
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+  .portal-text-zone p,
+  .portal-text-zone blockquote { 
+    font-size: 14px; /* Makes nature quote look sharp and compact */
+    line-height: 1.4; 
+    margin: 0;
+  } 
+  /* IMAGE ZONE: Erase wrappers and blue boxes completely */
+  .portal-image-zone {
+    order: 2 !important;
+    width: 100%; 
+    height: auto; 
+    padding: 0; /* REMOVES BLUE BORDER: Strips padding so photo hits container edges */
+    overflow: hidden; 
+    line-height: 0; 
+  } 
+  /* IMAGE: Force header photo to fill mobile screen width */
+  .portal-banner-img { 
+    width: 100%; 
+    height: auto; /* Scales height proportionally with width so 0% cropping occurs */
+    display: block; 
+    position: static; 
+    transform: none; 
+  }
+}
+
+/* Target tablets (usually up to 1024px wide) when turned sideways */
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  .portal-subtitle .page-subtitle {
+  font-size: 22px;
+  display: inline-block !important;
+  line-height: 1.1!important;     /* Keeps 16px text readable but highly compact */
+  margin: 0 !important;
+}
+  .portal-subtitle .description-smaller {
+    font-size:20px;
+    display: inline-block !important;
+    line-height: 1.1 !important; 
+  }
+.nav-menu li, .page-nav-menu li{
+  display: inline-block !important;
+  line-height: 1.1 !important;
+    margin: 0 6px; 
+  } 
+}
+
+/* Modern Reset & Fluid Typography */
+        .tagline { 
+            font-size: 1.1rem; 
+            font-style: italic; 
+            color: #1E1D3B;   /* very dark purplish blue */
+            margin-bottom: 24px; 
+        }
+		.container {margin-bottom:25px;}
+		
+        .container p { 
+        line-height:22px;		
+		margin: 9px 20px; /* Was 10px 12px; 25px 25px 16px 25px; */
+		font-size: 16px;  /* WAS 1.05rem; */
+        color: #1E1D3B;  /* very dark purplish blue */
+		text-justify: inter-word;
+		text-align: justify;
+		}
+        
+        /* Media Query for Smaller Screen Adjustments */
+        @media (max-width: 480px) {
+            body { padding: 0px; /* Was 15px */}
+            .container { padding: 5px 10px; }  /* WAS 25px 10px; */
+			.container p {font-size: 14px; line-height: 20px; padding:5px;}
+}			
+</style>
+</head>
+<body>
+<!-- Main Header Container -->
+    <header class="portal-header-grid">
+<!-- Row 1: Hub Site Navigation Bar -->
+        <nav class="site-nav-bar">
+            <ul class="nav-menu">
+                <li><a class="active" href="#" style="pointer-events: none; cursor: default; opacity: 0.8;">Home</a></li>
+                <li><a href="javascript:void(0)" aria-disabled="true" style="pointer-events: none; cursor: default; opacity: 0.8;">Biological Recorder</a></li>
+                <li><a href="javascript:void(0)" aria-disabled="true" style="pointer-events: none; cursor: default; opacity: 0.8;">Wildlife & Plants</a></li>
+                <li><a href="javascript:void(0)" aria-disabled="true" style="pointer-events: none; cursor: default; opacity: 0.8;">Natural Burial</a></li>
+            </ul>
+            <div class="nav-logo" style="font-style: italic;">
+                "Happy is the man who finds his diversion in nature. ...", Flowers of the Wild<span style="font-style: normal;">, Frank C. Pellett, 1931</span>
+            </div>  
+        </nav>
+<!-- Row 2 Left Column: Photo Asset -->
+        <div class="portal-image-zone">
+            <img src="https://rooted-in-soil.maps.arcgis.com/sharing/rest/content/items/541bf169c916425daf0b3ed831167cf0/data" alt="Rooted in Soil banner graphic" class="portal-banner-img" />
+        </div>
+<!-- Row 2 Right Column: Text Content -->
+        <div class="portal-text-zone">
+            <p class="portal-subtitle">
+                <span class="page-subtitle">Welcome to Rooted in Soil!</span><br>
+                <span class="description-smaller">Respecting the dynamics of place through time.</span>
+            </p>
+        </div>
+<!-- Row 3: Hub Page Navigation Bar -->
+        <nav class="page-nav-bar">
+            <ul class="page-nav-menu">
+                <li><a href="javascript:void(0)" aria-disabled="true" style="pointer-events: none; cursor: default; opacity: 0.8;">About</a></li>
+            </ul> 
+        </nav> 
+    </header>
+<!-- Main Content Under Construction Block -->
+    <main class="container">
+        <p class="tagline" style = "padding-top: 25px;font-style:normal;">Greetings!</p>
+		<p>Construction is underway on a new spatial engagement platform, <span style = "font-weight:bold;">Rooted in Soil</span>.
+		</p>
+		<p>New digital content, archival material from two websites (<span style = "font-weight:bold;">biologicalrecorder.com</span> and <span style = "font-weight:bold;">wildlifeandplants.com</span>), and natural burial data and information will be centralized into a single platform using <span style = "font-weight:bold;">ArcGIS Hub</span>.
+		</p>
+		<p>Public sharing of the <span style = "font-weight:bold;">Rooted in Soil</span> platform and its content is a priority, and I am diligently working to make this possible within the coming months.
+		</p>
+		<p>Thank you for your time and interest!</p>
+        <p>Sincerely,</p>
+        <p style = "margin-bottom:30px;"><span style = "font-style: italic;">Lisa Schlag</span>, OCVN<br>
+        Wildlife, plant, and GIS enthusiast
+        </p>
+    </main>
+</body>
+</html>
