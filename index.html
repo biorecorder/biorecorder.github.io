@@ -274,7 +274,12 @@ body {
     padding: 0; /* REMOVES BLUE BORDER: Strips padding so photo hits container edges */
     overflow: hidden; 
     line-height: 0; 
-  } 
+  }
+/* REMOVE DESKTOP OVERLAY ON MOBILE */
+  /* Turning this off prevents the desktop blue smudge from showing up on your full-width mobile photo */
+  .portal-image-zone::after {
+    display: none !important;
+  }
   /* IMAGE: Force header photo to fill mobile screen width */
   .portal-banner-img { 
     width: 100%; 
