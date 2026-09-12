@@ -78,6 +78,21 @@ body {
   overflow: hidden;
   line-height: 0;
   order: 1; /* Forces image to move to the first (left) position */
+  position: relative;  /* REQUIRED: This acts as an anchor point for soft blue overlay */
+}
+
+/* SMOOTH RIGHT-EDGE COATING */
+/* This automatically sprays a soft powder blue mist over the right 5.5px of portal image graphic */
+.portal-image-zone::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 5.5px;  /* width of soft edge transition */
+/* Fades from completely clear to your solid website powder blue color */
+  background: linear-gradient(to right, rgba(184, 211, 222, 0), #b8d3de);
+  pointer-events: none;  /*Allows mouse clicks to pass right through safely */
 }
 .portal-banner-img {
   /* Keep the dimensions perfectly locked to match the 715px grid track */
@@ -333,7 +348,8 @@ body {
         </nav>
 <!-- Row 2 Left Column: Photo Asset -->
         <div class="portal-image-zone">
-			<img src="https://rooted-in-soil.maps.arcgis.com/sharing/rest/content/items/8578c9379e8540d9943ce8a2e4e27f26/data" alt="Rooted in Soil" class="portal-banner-img" />
+			<img src="https://rooted-in-soil.maps.arcgis.com/sharing/rest/content/items/2fd13d8ccc8d4ed6a84e7ab566ccc2b9/data" alt="Rooted in Soil" class="portal-banner-img" />
+			<!-- <img src="https://rooted-in-soil.maps.arcgis.com/sharing/rest/content/items/8578c9379e8540d9943ce8a2e4e27f26/data" alt="Rooted in Soil" class="portal-banner-img" /> -->
 			<!-- <img src="https://rooted-in-soil.maps.arcgis.com/sharing/rest/content/items/a8b0b6cae6fc4a4c8eb4722753eba444/data" alt="Rooted in Soil" class="portal-banner-img" /> -->
 			<!-- <img src="https://rooted-in-soil.maps.arcgis.com/sharing/rest/content/items/71f566e3fdfe4665ab58b5afecb8881a/data" alt="Rooted in Soil" class="portal-banner-img" /> -->
 			<!-- <img src="https://rooted-in-soil.maps.arcgis.com/sharing/rest/content/items/1c4122f543814c9aa196c7aca15ae109/data" alt="Rooted in Soil" class="portal-banner-img" /> -->
